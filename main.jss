@@ -42,3 +42,12 @@ function findMovie() {
     document.getElementById("randomMovie").setAttribute("value", Movie[random]);
 }
 
+
+//----------------------congratulation screen-------------//
+  function openPic() {
+    document.getElementById("myPic").style.width = "100%";
+  }
+  
+  function closePic() {
+    document.getElementById("myPic").style.width = "0%";
+  }

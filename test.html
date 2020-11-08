@@ -1,30 +1,146 @@
-<!DOCTYPE html>
-<html>
-  <div>
-    <button onclick="findMovie();" type="randomMovie">Random Movie</button>
-    <input "randomMovie" id="randomMovie">
-  </div>
-  
-  <script>
-  function findMovie() {
-      var Movie = ["Citizen Kane", "The Apartment" ,"Fargo", "All ABout Eve", "Casablanca", "Double Indemity" , "A Face in the Crowd", "A Face in the Crowd"  ,"Do the Right Thing"
-                  ,"The Treasure of the Sierra Madre","Boogie Nights","Rear Window","Pulp Fiction","Fast TImes at Ridgemont High","Boyz n the Hood","Midnight Cowboy",
-                  "Sunset Boulevard","Vertigo","Some Like it Hot","The Maltese Falcon","On the Waterfront","Touch of Evil",  ,"Cool Hand Luke","To Kill a Mockingbird",
-                  "Who Framed Roger Rabbit","Duck Soup","Groundhog Day","The Asphalt Jungle","Wizard of Oz","This Spinal Tap","The Man Who Shot Liberty Valance","A Night at the Opera",
-                  "Who's Afraid of Virginia Woolf","Dr Strangelove","Blazing Saddles","Night of the Hunter","The Thing","Unforgiven","The Big Lebowski","Raiders of the Lost Ark",
-                  "Blade Runner","The Best Years of Our Lives","The Htch-Hiker","It Happened One Night","Sullivan's Travels","Singing in the Railroad","Psycho","Rocky","Young Frankenstein",
-                  "Jaws","High Noon","Halloween","Ghostbusters","Shadow of the Doubt","Raising Arizonia","Big","Bonnie and Clyde","A Clockwork Orange","Stagecoach","The Royal Tennenbaums",
-                  "Nation Lampoon's Vacation","The Wild Bunch","12 Angry Men","Alien","Coming to America" ,"Willy Wonka and The Chocalate Factory","Die Hard","No Country for Old Men",
-                  "Dazed and Confused","The Searchers","Back to the Future","Planes Trains and Automobiles","LA Confidential","The Grapes of Wraith","Bringing up Baby","Scream","A Christmas Story",
-                  "To Have or Have Not","The Shining","Ed Wood","Mr Smith Goes to Washington","Hail the Conquering Hero","First Blood","Dog Day Afternoon","The Terminator","E.T. The Extraterrestrial",
-                  "Shaun of the Dead","The Lady Eve","North by Northwest","Apocalypse Now","Clueless","Taxi Driver","Platoon","What Ever Happened to Baby Jane","Get Out","Fight CLub",
-                  "Gentlemen Prefer Blondes","Grease","Scott Pilgrim versus the World"
- ];
-  
-      var random = Math.floor(Math.random() * (Movie.length - 1));
-  
-      document.getElementById("randomMovie").setAttribute("value", Movie[random]);
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: 'Lato', sans-serif;
   }
   
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  p5 {
+    color: green;
+    font-size: 500%;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  </style>
+  </head>
+
+  
+  <body>
+  
+  <div id="myPic" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
+    <div class="overlay-content">
+      <p5>Congratulations You're a Platypus!</p5>
+      <img src="https://i.pinimg.com/originals/10/8f/7a/108f7aa6aa59c941a79ba804aa171b51.jpg" alt="platypusImage" style="width:100%;height:100%;">
+    </div>
+  </div>
+  
+  <h2>Fullscreen Overlay Pic Example</h2>
+
+  <p>In this example, the Picigation menu will slide in, from left to right:</p>
+  
+  
+
+  <h2> Become a Platypus It's Free! </h2>
+    
+  <body>
+   <div class="container">
+    
+       <label for="pname">First Name</label>
+       <input type="text" id="pname" name="useername" placeholder="Your New Platypus Name...">
+   
+       <label for="password">Password</label>
+       <input type="text" id="password" name="userpassword" placeholder="Your password..">
+
+       <label for="password">Retype Password</label>
+       <input type="text" id="password" name="userpassword" placeholder="Your password..">
+
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+    
+        <label for="email">Your Email</label>
+        <input type="text" id="email" name="useremail" placeholder="Your Email..">
+        
+        <label for="favorite">Favorite Movie</label>
+        <input type="text" id="favorite" name="favoriteMovie" placeholder="Your current favorite movie..">
+
+
+
+        <button style="font-size:30px;cursor:pointer" onclick="openPic()">&#9776; open</button>
+        
+
+        <br>
+        <br>
+
+      <label>
+           <input type="checkbox" checked="checked" name="subscribe"> Recieve PFI Newsletter
+         </label
+
+        </form>
+    </div>
+  </body>
+
+
+
+
+
+
+
+  <script>
+  function openPic() {
+    document.getElementById("myPic").style.width = "100%";
+  }
+  
+  function closePic() {
+    document.getElementById("myPic").style.width = "0%";
+  }
   </script>
+       
+  </body>
   </html>

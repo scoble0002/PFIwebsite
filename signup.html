@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
+        <script src="main.jss"></script>
+
     </head>
 
 
@@ -26,62 +28,62 @@
             </ul>
            </div>
   
-           <script src="main.jss"></script>
 
     </header>
 
 
 
-<form action="signup.html" method="post">
-
-
-    <h2> Become a Platypus It's Free! </h2>
-    
-   <body>
-    <div class="container">
-       <form action="contact.html">
-
-        <label for="pname">First Name</label>
-        <input type="text" id="pname" name="useername" placeholder="Your New Platypus Name...">
-    
-        <label for="password">Password</label>
-        <input type="text" id="password" name="userpassword" placeholder="Your password..">
-
-        <label for="password">Retype Password</label>
-        <input type="text" id="password" name="userpassword" placeholder="Your password..">
-
-
-         <label for="fname">First Name</label>
-         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-     
-         <label for="lname">Last Name</label>
-         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-   
-     
-         <label for="email">Your Email</label>
-         <input type="text" id="email" name="useremail" placeholder="Your Email..">
+    <body>
+  
+        <div id="myPic" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
+          <div class="overlay-content">
+            <p5>Congratulations You're a Platypus!</p5>
+            <img src="https://i.pinimg.com/originals/10/8f/7a/108f7aa6aa59c941a79ba804aa171b51.jpg" alt="platypusImage" style="width:100%;height:100%;">
+          </div>
+        </div>
+        
+        <h2> Become a Platypus It's Free! </h2>
+          
+        <body>
+          
+            <div class="container">
+     <form>
+             <label for="pname">First Name</label>
+             <input type="text" id="pname" name="useername" placeholder="Your New Platypus Name...">
          
-         <label for="favorite">Favorite Movie</label>
-         <input type="text" id="favorite" name="favoriteMovie" placeholder="Your current favorite movie..">
+             <label for="password">Password</label>
+             <input type="text" id="password" name="userpassword" placeholder="Your password..">
+      
+             <label for="password">Retype Password</label>
+             <input type="text" id="password" name="userpassword" placeholder="Your password..">
+      
+      
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+          
+              <label for="email">Your Email</label>
+              <input type="text" id="email" name="useremail" placeholder="Your Email..">
+              
+              <label for="favorite">Favorite Movie</label>
+              <input type="text" id="favorite" name="favoriteMovie" placeholder="Your current favorite movie..">
+      
+      
+            <label>
+                 <input type="checkbox" checked="checked" name="subscribe"> Recieve PFI Newsletter
+               </label
+            </form>
+        </div>
+         
+            <button style="font-size:30px;cursor:pointer" onclick="openPic()">&#9776; Join Us!</button>
 
-
-         <input type="submit" value="Submit">
-
-         <br>
-         <br>
-
-       <label>
-            <input type="checkbox" checked="checked" name="subscribe"> Recieve PFI Newsletter
-          </label
-     
-       </form>
-
-     </div>
-   </body>
-
-
-
-</form>
+          
+        </body>
+      
 
 
 <footer>
