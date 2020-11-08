@@ -103,590 +103,167 @@
 
 
 
+      <form action="index.html" method="post">
 
+        <h1> PFI Randomized Movie Recommendations</h1>
+            
+        <fieldset>
 
+            <legend><span class="number"></span> Filters </legend>
 
+            <input type="checkbox" id="genre" value="interest_genre" name="user_genre"><label class="light" for="genre">Genre</label>
 
-let movie = 
-    
-    Citizen Kane    Drama Passed Orson Welles
+            <select id="choice" name="user_choice">
 
+                <optgroup label="Genre">   
 
-    The Apartment    Comedy Passed Billy Wilder
+                    <option value="horror_genre">Horror</option>
+                    <option value="comedy_genre">Comedy</option>
+                    <option value="scifi_genre">Sci Fi</option>
+                    <option value="drama_genre">Drama</option>
+                    <option value="crime_genre">Crime</option>
+                    <option value="western_genre">Western</option>
+                    <option value="thiller_genre">Thiller</option>
 
+                </optgroup>
 
-    Fargo
-    Drama R Joel & Ethan Coen
+            </select>
 
+            <br>
 
-    All About Eve
-    Drama Passed Joseph Mankeiwicz
+            <input type="checkbox" id="mpaa" value="interest_mpaa" name="user_mpaa"><label class="light" for="mpaa">MPAA Rating</label>
 
+            <select id="choice" name="user_choice">
 
-    Casablanca
-    Drama Passed Michael Curtiz
+                <optgroup label="Rating">  
 
-    Double Idemnity
-    Crime Passed Billy Wilder
-
-
-    A Face In The Crowd
-    Drama Passed Elia Kazan
-
-
-    Do The Right Thing
-    Drama R Spike Lee
-
-    The Treasure of Sierra Madra
-    Drama Passed John Huston
-
-
-    Boogie NIghts
-    Drama
-R   
-    Paul Thomas Anderson
-
-
-    Rear Window
-    Drama
-Passed 
-    Alfred Hitchcock
-
-
-    A Streetcar Named Desire
-    Drama
-Passed
-    Elia Kazan
-
-
-    Pulp FIction
-    Crime
-R  
-    Quentin Tarentino
-
-
-    Fast Times at Ridgemont High
-    Comedy
-R  
-    Amy Heckerling
-
-
-    Boys in tha Hood
-    Drama
-R  
-    John Singleton
-
-
-    Midnight Cowboy
-    Drama
-Unrated  
-    John Schlesinger
-
-
-    Sunset Boulevard
-    Drama
-Passed  
-    Billy Wilder
-
-
-    Vertigo
-    Thriller
-Passed  
-    Alfred Hitchcock
-
-
-    Some Like It Hot
-    Comedy
-R  
-    Billy Wilder
-
-
-    The Maltese Falcon
-    Crime
-Passed  
-    John Huston
-
-
-    On The Waterfront
-    Drama
-Passed  
-    Elia Kazan
-
-
-    Touch of Evil
-    Crime
-Passed  
-    Orson Welles
-
-
-    Cool Hand Luke
-    Drama
-R  
-    Stuart Rosenberg
-
-
-    To Kill a Mockingbird
-    Drama
-Passed  
-    Robert Mulligen
-
-
-    Who Framed Roger Rabbit
-    Comedy
-Passed  
-    Robert Zemekis
-
-
-    Duck Soup
-    Comedy
-Passed  
-    Leo McCarey
-
-
-    Groundhog Day
-    Comedy
-PG-13  
-    Harold Ramis
-
-
-    The Asphalt Jungle
-    Drama
-Passed  
-    John Huston
-
-
-    The Wizard of Oz
-    Fantasy
-Passed  
-    Victor Fleming
-
-
-    This is Spinal Tap
-    Comedy
-R  
-    Carl Reiner
-
-
-    The Man Who Shot Liberty Valance
-    Western
-Passed  
-    John Ford
-
-
-    A Night at The Opera
-    Comedy
-Passed  
-    Sam Wood
-
-
-    Who's Afraid of Virginia Woolf
-    Drama
-Unrated  
-    Mike Nichols
-
-
-    Dr Strangelove
-    Comedy
-R  
-    Stanley Kubrick
-
-
-    Blazing Saddles
-    Comedy
-R  
-    Mel Brooks
-
-
-    Night of the Hunter
-    Horror
-Passed  
-    Charles Laughton
-
-
-    The Thing
-    Sci Fi
-R  
-    John Carpenter
-
-
-    Unforgiven
-    Western
-R  
-    Clint Eastwood
-
-
-    The Big Lebowski
-    Comedy
-R  
-    Joel & Ethan Coen
-
-
-    Raiders of the Lost Ark
-    Adventure
-PG-13  
-    Steven Spielberg
-
-
-    Blade RUnner
-    Sci Fi
-R  
-    Ridley Scott
-
-
-    The Best Years of Our Lives
-    War
-Passed  
-    William Wyler
-
-
-    The Hitch-hiker
-    Drama
-Passed  
-    Ida Lupino
-
-
-    It Happened One Night
-    Comedy
-Passed  
-    Frank Capra
-
-
-    Sulliven's Travels
-    Comedy
-Passed  
-    Preston Sturgis
-
-
-    Singing in the Rain
-    Musical
-Passed  
-    Gene Kelly
-
-
-    Psycho
-    Horror
-Passed  
-    Alfred Hitchcock
-
-
-    Rocky
-    Drama
-PG  
-    John Avildson
-
-
-    Young Frankenstein
-    Comedy
-PG  
-    Mel Brooks
-
-
-    Jaws
-    Horror
-R  
-    Steven Spielberg
-
-
-    High Noon
-    Western
-Passed  
-    Fred Zimmerman
-
-
-    Halloween
-    Horror
-R  
-    John Carpenter
-
-
-    Ghostbusters
-    Comedy
-PG  
-    Harold Ramis
-
-
-    Star Wars
-    Sci Fi
-PG  
-    George Lucas
-
-
-    Shadow of a Doubt
-    Thriller
-Passed  
-    Alfred Hitchcock
-
-
-    Raising Arizona
-    Comedy
-R  
-    Joel & Ethan Coen
-
-
-    Big
-    Comedy
-PG-13  
-    Penny Marshal
-
-
-    Bonnie & Clyde
-    Crime
-R  
-    Arthur Penn
-
-
-    A CLockwork Orange
-    Sci Fi
-R  
-    Stanley Kubrick
-
-
-    Stagecoach
-    Western
-Passed  
-    John Ford
-
-
-    The Royal Tennenbaums
-    Comedy
-R  
-    Paul Thomas Anderson
-
-
-    Natonal Lampoon's Vacation
-    Comedy
-R  
-    Harold Ramis
-
-
-    The Wild Bunch
-    Western
-Unrated  
-    Sam Peckinpaw
-
-    
-    12 Angry Men
-    Drama
-Passed  
-    Sidney Lumet
-
-
-    Alien
-    Sci Fi
-R  
-    Ridley Scott
-
-
-    Coming To America
-    Comedy
-R  
-    John Landis
-
-
-    Willy Wonka and The Chocolate Factory
-    Fantasy
-G 
-    Mel Stuart
-
-
-    Die Hard
-    Action
-R  
-    John McTieran
-
-
-    No Country For Old Men
-    Crime
-R  
-    The Coen Brothers
-
-
-    Dazed and Confused
-    Comedy
-R  
-    Richard Linkletter
-
-
-    The Searchers
-    Western
-Passed   
-    John Ford
-
-
-    Back to the Future
-    Sci Fi
-PG-13  
-    Robert Zemekis
-
-
-    Planes Trains and Automobiles
-    Comedy
-R 
-    John Hughes
-
-
-    LA Confidential
-    Crime
-R  
-    Curtis Hanson
-
-
-    The Grapes of Wraith
-    Drama
-Passed  
-    John Ford
-
-
-    Bringing up Baby
-    Comedy
-Passed  
-    Howard Hawks
-
-
-    Scream
-    Horror
-R 
-    Wes Craven
-
-
-    A Christmas Story
-    Drama
-PG  
-    Bob Clark
-
-
-    To Have or Have Not
-    Crime
-Passed 
-    Howard Hawks
-
-
-    The Shining
-    Horror
-R  
-    Stanley Kubrick
-
-
-    Ed Wood
-    Comedy
-R" 
-    Tim Burton
-
-
-    Mr Smith Goes to Washington
-    Drama
-Passed" 
-    Frank Capra
-
-
-    Hail the Conquering Hero
-    Comedy
-Passed"
-    Preston Sturgis
-
-
-    First Blood
-    Action
-R"  
-    Ted Kotcheff
-
-
-    Dog Day Afternoon
-    Crime
-R"  
-    Sidney Lumet
-
-
-    The Terminator
-    Sci Fi
-R"
-    James Cameron
-
-
-    E.T. The Extraterrestrial
-    Sci Fi
-PG"  
-    Steven Spielberg
-
-
-    Shaun of the Dead
-    Comedy
-R"  
-    Edger Wright
-
-
-    The Lady Eve
-    Comedy
-Passed"  
-    Preston Sturgis
-
-
-    North by Northwest
-    Thriller
-Passed"
-    Alfred Hitchcock
-
-
-    Apocalypse Now
-    War
-R"
-    Francis Ford Coppola
-
-
-    Clueless
-    Comedy
-PG-13"  
-    Amy Heckerling
-
-
-    Taxi Driver
-    Drama
-R"  
-    Martin Scorsese
-
-
-    Platoon
-    War
-R"  
-    Oliver Stone
-
-
-    Whatever Happened to Baby Jane
-    Horror
-Passed"  
-    Robert Aldrich
-
-
-    Get Out
-    Horror
-R"
-    Jordan Peele
-
-
-    Fight Club
-    Drama
-R"
-    David Fincher
-
-
-    Gentleman Prefer Blondes
-    Comedy
-Passed"
-    Howard Hawks
-
-
-    Grease
-    Musical
-PG" 
-    Randal Kleiser
-
-
-    Scott Pilgrim Versus the World
-    Action
-PG-13"  
-    Edger Wright
-
+                    <option value="g_rating"> G </option>
+                    <option value="pg_rating"> PG </option>
+                    <option value="pg_13_rating"> PG-13 </option>
+                    <option value="r_rating"> R </option>
+                    <option value="unrated_rating"> Unrated </option>
+                    <option value="passed_rating"> Passed </option>
     
 
+                </optgroup>
+
+            </select>
+
+                <br>
+            
+                <input type="checkbox" id="director" value="interest_director" name="user_director"><label class="light" for="director">Director</label>
+
+            <select id="choice" name="user_choice">
+
+                <optgroup label="Directed by ">  
+                
+
+
+                    <option value="orsonwelles-director"> Orson Welles </option>
+                    <option value="joelethancoen_director"> Joel and Ethan Coen </option>
+                    <option value="josephmankeiwicz_director"> Joseph Mankeiwicz </option>
+                    <option value="michaelcurtiz_director"> Michael Curtiz </option>
+                    <option value="billywilder_director"> Billy Wilder </option>
+                    <option value="eliakazan_director"> Elia Kazan </option>
+                    <option value="spikelee_director"> Spike Lee </option>
+                    <option value="johnhuston_director"> John Huston </option>
+                    <option value="paulthomasanderson_director"> Paul Thomas Anderson </option>
+                    <option value="alfredhitchcock_director"> Alfred Hitchcock </option>
+                    <option value="quentintarentino_director"> Quentin Tarentino </option>
+                    <option value="amyheckerling_director"> Amy Heckerling </option>
+                    <option value="johnsingleton_director"> John Singleton </option>
+                    <option value="johnschlesinger_director"> John Schlesinger </option>
+                    <option value="stuartrosenberg_director"> Stuart Rosenberg </option>
+                    <option value="robertmulligen_director"> Robert Mulligen </option>
+                    <option value="robertzemekis_director"> Robert Zemekis </option>
+                    <option value="leomcarey_director"> Leo McCarey </option>
+                    <option value="haroldramis_director"> Harold Ramis </option>
+                    <option value="victorfleming_director"> Victor Fleming </option>
+                    <option value="carlreiner_director"> Carl Reiner </option>
+                    <option value="johnford_director"> John Ford </option>
+                    <option value="samwood_director"> Sam Wood </option>
+                    <option value="mikenichols_director"> Mike Nichols </option>
+                    <option value="stanleykubrick_director"> Stanley Kubrick </option>
+                    <option value="melbrooks_director"> Mel Brooks </option>
+                    <option value="charledlaughton_director"> Charles Laughton </option>
+                    <option value="johncarpenter_director"> John Carpenter </option>
+                    <option value="clinteastwood_director"> Clint Eastwood </option>
+                    <option value="stevenspielberg_director"> Steven Spielberg </option>
+                    <option value="ridleyscott_director"> Ridley Scott </option>
+                    <option value="williamwyler_director"> William Wyler </option>
+                    <option value="idalupino_director"> Ida Lupino </option>
+                    <option value="frankcapra_director"> Frank Capra </option>
+                    <option value="prestonsturgis_director"> Preston Sturgis </option>
+                    <option value="genekelly_director"> Gene Kelly </option>
+                    <option value="johnavildson_director"> John Avildson </option>
+                    <option value="fredzimmerman_director"> Fred Zimmerman </option>
+                    <option value="georgelucas_director"> George Lucas </option>
+                    <option value="pennymarshal_director"> Penny Marshal </option>
+                    <option value="arthurpenn_director"> Arthur Penn </option>
+                    <option value="sampeckinpaw_director"> Sam Peckinpaw </option>
+                    <option value="sidneylumet_director"> Sidney Lumet </option>
+                    <option value="johnlandis_director"> John Landis </option>
+                    <option value="melstuart_director"> Mel Stuart </option>
+                    <option value="johnmctieran_director"> John McTieran </option>
+                    <option value="richardlinkletter_director"> Richard Linkletter </option>
+                    <option value="johnhughes_director"> John Hughes </option>
+                    <option value="curtishanson_director"> Curtis Hanson </option>
+                    <option value="howardhawks_director"> Howard Hawks </option>
+                    <option value="wescraven_director"> Wes Craven </option>
+                    <option value="bobclark_director"> Bob Clark </option>
+                    <option value="timburton_director"> Tim Burton </option>
+                    <option value="tedkotcheff_director"> Ted Kotcheff </option>
+                    <option value="jamescameron_director"> James Cameron </option>
+                    <option value="edgarwright_director"> Edgar Wright </option>
+                    <option value="franciusfordcoppola_director"> Francis Ford Coppola </option>
+                    <option value="martinscorsese_director"> Martin Scorsese </option>
+                    <option value="oliverstone_director"> Oliver Stone </option>
+                    <option value="robertaldrich_director"> Robert Aldrich </option>
+                    <option value="jordanpeele_director"> Jordan Peele </option>
+                    <option value="davidfincher_director"> David Fincher </option>
+                    <option value="randalkleiser_director"> Randal Kleiser </option>
+    
+    
+                </optgroup>
+
+                <br>
+
+            </select>
+
+
+         </fieldset>
+
+
+
+
+<form action="index.html" method="post">
+
+
+            <h2> Sign-up for free account </h2>
+
+            <fieldset>
+
+                <legend><span class="number"></span> Sign In or Create Account </legend>
+            
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+
+                <br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email">
+    
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="user_password">
+            
+                <br>
+
+            </fieldset>
+
+            <button type="submit"> Submit Information </button>    
+    
+      </form>
 
 
