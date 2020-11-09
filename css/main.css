@@ -48,26 +48,6 @@
   text-align: right;
 }
 
-/*
-footer {
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: green;
-  color: white;
-  text-align: end;
-}
-*/
-
-/*
-header {
-  background-color: #363a3d;
-  margin: 0;
-  padding: 0;
-}
-*/
-
 .platypusHeader {
   margin: 0;
 }
@@ -84,8 +64,6 @@ body {
 main {
   flex: 1 0 auto; /* allows the content to grow but not shrink */
 }
-
-
 
 
 div {
@@ -232,11 +210,20 @@ body {
   font-size: 60px;
 }
 
-p5 {
-  color: green;
-  font-size: 500%;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 750%;
+  color: limegreen;
+}
 /*contact page icons*/
           .fa {
             padding: 20px;

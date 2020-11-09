@@ -4,65 +4,8 @@
   box-sizing: border-box;
 }
 
-  
-/******************************Nav Bar *****************************/
-
-
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  ul li {
-    float: left;
-  }
-  
-  ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
   /*Change the link color to #111 (black) on hover*/
-  ul li a:hover {
+  ol li a:hover {
     background-color: #111;
   }
   
@@ -102,20 +45,12 @@
   width: 100%;
   background-color: blue;
   color: white;
-  text-align: center;
+  text-align: right;
 }
 
-/*
-.footer {
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: end;
+.platypusHeader {
+  margin: 0;
 }
-*/
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -129,6 +64,7 @@ body {
 main {
   flex: 1 0 auto; /* allows the content to grow but not shrink */
 }
+
 
 div {
   margin: 0 0 30px 0;
@@ -227,7 +163,6 @@ button {
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
 }
-
 /*congratulation Screen*/
 body {
   font-family: 'Lato', sans-serif;
@@ -252,6 +187,7 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  vertical-align: middle;
 }
 
 .overlay a {
@@ -277,6 +213,9 @@ body {
 p5 {
   color: green;
   font-size: 500%;
+}
+
+
 }
 
 /*contact page icons*/
