@@ -4,208 +4,7 @@
   box-sizing: border-box;
 }
 
-  /*nav bar*/
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  ul li {
-    float: left;
-  }
-  
-  ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /*Change the link color to #111 (black) on hover*/
-  ul li a:hover {
-    background-color: #111;
-  }
-  
-  /*movie list*/
-
-  ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: purple;
-  }
-  
-  ol li {
-    float: center;
-  }
-  
-  ol li a {
-    display: block;
-    color: orange;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
- /* Change the link color to #111 (black) on hover*/
-  ol li a:hover {
-    background-color: #111;
-  }
-
-/*
-body {
-  font-family: 'Nunito', sans-serif;
-  color: yellow;
-}*/
-
-/*
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-*/
-
-body {
-  display: flex;
-  flex-direction: column; /* creates rows out of the elements main and footer */
-  height: 100vh; 
-  margin:0;
-}
-
-main {
-  flex: 1 0 auto; /* allows the content to grow but not shrink */
-}
-
-footer {
-  background: orange;
-}
-
-form {
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 10px 20px;
-  background: black;
-  border-radius: 8px;
-}
-
-form {
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 10px 20px;
-  background: black;
-  border-radius: 8px;
-}
-
-
-div {
-  margin: 0 0 30px 0;
-  text-align: center;
-}
-
-
-h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
-
-select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
-
-select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
-}
-
-button {
-  padding: 19px 39px 18px 39px;
-  color: white;
-  background-color: grey;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid red;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-}
-
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
-.number {
-  background-color: purple;
-  color: green;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
-}
-
 /******************************Nav Bar *****************************/
 
 
@@ -242,7 +41,288 @@ label.light {
   padding-top: 60px;
 }
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul li {
+    float: left;
+  }
+  
+  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /*Change the link color to #111 (black) on hover*/
+  ul li a:hover {
+    background-color: #111;
+  }
+  
+  /*movie list*/
 
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: purple;
+    border-radius: 8px;
+  }
+  
+  ol li {
+    float: center;
+  }
+  
+  ol li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+/*
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: end;
+}
+*/
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: column; /* creates rows out of the elements main and footer */
+  height: 100vh; 
+  margin:0;
+}
+
+main {
+  flex: 1 0 auto; /* allows the content to grow but not shrink */
+}
+
+div {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+p {
+  color: pink;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: black;
+  border-radius: 8px;
+}
+
+h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+p2 {
+  color: orange;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: black;
+  border-radius: 8px;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: silver;
+  border-radius: 8px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="favorite"],
+input[type="randomMovie"],
+textarea,
+
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: white;
+  background-color: grey;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid red;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+/*congratulation Screen*/
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+p5 {
+  color: green;
+  font-size: 500%;
+}
+
+/*contact page icons*/
+          .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+          }
+          
+          .fa:hover {
+              opacity: 0.7;
+          }
+          
+          .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+          
+          .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+                    
+          .fa-youtube {
+            background: #bb0000;
+            color: white;
+          }
+          
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+          
+          h3 {
+            margin: 0 0 30px 0;
+            text-align: center;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 8px;
+
+          }
 
 /* Media Queries  */
 
@@ -257,7 +337,7 @@ label.light {
 /* medium devices  */
 @media only screen and (min-width: 600px) {
   body {
-    background-color: black;
+    background-color: blue;
   }
 }
 
@@ -265,9 +345,18 @@ label.light {
 /* large devices  */
 @media only screen and (min-width: 1200px) {
   body {
-    background-color: blue;
+    background-color: black;
   }
 }
 
+/* Congratulation scree */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 
 

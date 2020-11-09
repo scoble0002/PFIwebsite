@@ -5,7 +5,7 @@
 }
 
   /*Change the link color to #111 (black) on hover*/
-  Ol li a:hover {
+  ol li a:hover {
     background-color: #111;
   }
   
@@ -59,6 +59,18 @@ footer {
   text-align: end;
 }
 */
+
+/*
+header {
+  background-color: #363a3d;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.platypusHeader {
+  margin: 0;
+}
 
 body {
   font-family: 'Nunito', sans-serif;
