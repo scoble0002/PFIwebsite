@@ -7,7 +7,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="css/normalize.css">
           <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="css/main.css">
+          <link rel="stylesheet" href="css/test.css">
 
                  <!--This breaks my media queries. its my navbar-->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -59,20 +59,27 @@
   
      </header>   
 
-    <body>
-    
-      <div class="container">
-     
-                <button onclick="findMovie();" type="randomMovie">Random Movie</button>
-                <input "randomMovie" id="randomMovie">
-           </div>
-     
 
-
+     <h2> Get a Recommendation from the PFI 100 </h2>
         
+    <body>
+
+          <div class="container">
+
+            <form>
+              <label for="pname"> Platypus Approved Recommendation </label>
+    
+              <input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation">
+          
+             </form>          
+
+          <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
+      
+      </div>
+
     </body>
 
     <footer class="footer">
       &#169 2020 PFI Media &nbsp;
-     </footer>
-      
+     </footer>.
+      </html>
