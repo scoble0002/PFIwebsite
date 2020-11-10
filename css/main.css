@@ -43,7 +43,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(48, 44, 44);
     color: white;
     text-align: right;
   }
@@ -163,6 +163,8 @@
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
   }
+
+  
   /*congratulation Screen*/
   body {
     font-family: 'Lato', sans-serif;
@@ -221,6 +223,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 100%;
+    width: 100%;
     transform: translate(-50%, -50%);
     font-size: 750%;
     color: limegreen;
@@ -230,64 +234,21 @@
   
   }
   
-  /*contact page icons*/
-            .fa {
-              padding: 20px;
-              font-size: 30px;
-              width: 50px;
-              text-align: center;
-              text-decoration: none;
-              margin: 5px 2px;
-            }
-            
-            .fa:hover {
-                opacity: 0.7;
-            }
-            
-            .fa-facebook {
-              background: #3B5998;
-              color: white;
-            }
-            
-            .fa-twitter {
-              background: #55ACEE;
-              color: white;
-            }
-                      
-            .fa-youtube {
-              background: #bb0000;
-              color: white;
-            }
-            
-            .fa-instagram {
-              background: #125688;
-              color: white;
-            }
-            
-            h3 {
-              margin: 0 0 30px 0;
-              text-align: center;
-              max-width: ;
-              margin: 10px auto;
-              padding: 10px 20px;
-              background: white;
-              border-radius: 8px;
-  
-            }
+
   
   /* Media Queries  */
   
   
   /* small devices  */
   @media only screen and (max-width: 600px) {
-    body {
+    h3 {
       background-color: red;
     }
   }
   
   /* medium devices  */
   @media only screen and (min-width: 600px) {
-    body {
+    h3 {
       background-color: blue;
     }
   }
@@ -295,7 +256,7 @@
   
   /* large devices  */
   @media only screen and (min-width: 1200px) {
-    body {
+    h3 {
       background-color: black;
     }
   }
