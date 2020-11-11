@@ -7,12 +7,8 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="css/normalize.css">
           <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="css/test.css">
-
-                 <!--This breaks my media queries. its my navbar-->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-           
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             <script src="main.jss"></script>
@@ -57,29 +53,479 @@
         <br>
         
   
-     </header>   
+     </header>
+  
 
-
-     <h2> Get a Recommendation from the PFI 100 </h2>
-        
-    <body>
-
-          <div class="container">
-
-            <form>
-              <label for="pname"> Platypus Approved Recommendation </label>
+     <style>
+  
+      h1 {
+        margin: 0 0 30px 0;
+        text-align: center;
+      }
     
-              <input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation">
-          
-             </form>          
+    .filterDiv {
+      float: left;
+      background-color: teal;
+      color: #ffffff;
+      width: 300px;
+      height: 300px;  
+      line-height: 100px;
+      text-align: center;
+      margin: 2px;
+        
+    }
+    
+    
+    
+    .show {
+      display: block;
+    }
+    
+    
+    .container {
+      margin-top: 20px;
+      overflow: hidden;
+    
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+    
+    .btnContainer {
+      background-color: white;
+      color: black;
+      width: 100%;
+      line-height: 100px;
+      margin: 2px;
+      text-align: center;
+    }
+    
+    </style>
+    
+<body>
 
-          <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
+  <h1>Filter by Genre</h1>
+  
+  <div class="btnContainer" id="myBtnContainer">
+    <button class="btn" onclick="filterSelection('action')">Action</button>
+    <button class="btn" onclick="filterSelection('drama')">Drama</button>
+    <button class="btn" onclick="filterSelection('horror')"> Horror</button>
+    <button class="btn" onclick="filterSelection('comedy')"> Comedy</button>
+    <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('scifi')"> Sci=Fi</button>
+    <button class="btn" onclick="filterSelection('crime')">Crime</button>
+    <button class="btn" onclick="filterSelection('musical')"> Musical</button>
+    <button class="btn" onclick="filterSelection('western')"> Western</button>
+    <button class="btn" onclick="filterSelection('war')"> War</button>
+  </div>
+  
+  
+  <div class="container">
+    <div class="filterDiv drama passed orsonwelles"><h2>Citizen Kane</h2>  
+      Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+      Watch the Trailer: <a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>
+  </div>
+  <div class="filterDiv comedy passed billywilder"> <h2>The Apartment</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/GX9-5Zxy5us"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  </div>
+  <div class="filterDiv drama restricted joelethancoen"><h2>Fargo</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/h2tY82z3xXU"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  </div>
+  <div class="filterDiv drama passed josephmankeiwicz"> <h2>All About Eve</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/MILphnfj2mo"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   </div>
+  <div class="filterDiv drama passed michaelcurtiz">  <h2>Casablanca </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/S9ID5DHsX8g"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Casablanca </div>
+  <div class="filterDiv crime passed billywilder">     <h2>Double Idemnity </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/yKrrAa2o9Eg"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Double Indemity </div>
+  <div class="filterDiv drama passed eliakazan">           <h2>   A Face In The Crowd</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/6Dicfa65I2E"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  A Face in the Crowd </div>
+  <div class="filterDiv drama restricted spikelee">  <h2> Do The Right Thing </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/LKeWrdPsYAc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Do the Right Thing </div>
+  <div class="filterDiv western passed johnhuston">  <h2>The Treasure of Sierra Madra</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/x5XgGjGbQzc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>   
+  The Treasure of the Sierra Madre </div>
+  <div class="filterDiv drama restricted paulthomasanderson"> <h2>Boogie Nights </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/pOk0fsMGyck"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Boogie Nights </div>
+  <div class="filterDiv thriller passed alfredhitchcock">  <h2>Rear Window </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/m01YktiEZCw"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Rear Window </div>
+   <div class="filterDiv drama passed eliakazan">  <h2>A Streetcar Named Desire </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+   Watch the Trailer: <a href="https://youtu.be/FVDecBMyyZI"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Rear Window </div>  
+  <div class="filterDiv crime restricted quentintarentino">         <h2>     Pulp Fiction </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/s7EdQ4FqbhY"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Pulp Fiction </div>
+  <div class="filterDiv comedy restricted amyheckerling">   <h2>Fast Times at Ridgemont High</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/vzva_I8WPAg"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Fast TImes at Ridgemont High </div>
+  <div class="filterDiv drama restricted johnsingleton"> <h2>Boyz n tha Hood </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>              
+    Watch the Trailer: <a href="https://youtu.be/sLgCCdLbQNc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Boyz n the Hood </div>
+  <div class="filterDiv drama unrated johnschlesinger">    <h2>Midnight Cowboy</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/vS2IdfBkkj0"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Midnight Cowboy </div>
+  <div class="filterDiv drama passed billywilder"> <h2>Sunset Boulevard </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/_dY0SVxnHjQ"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Sunset Boulevard </div>
+  <div class="filterDiv thriller passed alfredhitchcock"> <h2>  Vertigo </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>               
+    Watch the Trailer: <a href="https://youtu.be/Z5jvQwwHQNY"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Vertigo </div>
+  <div class="filterDiv comedy passed billywilder">  <h2>    Some Like It Hot </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/CPkQ2OQAJSU"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Some Like it Hot </div>
+  <div class="filterDiv crime passed johnhuston"> <h2>The Maltese Falcon </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/boZoLR17If8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Maltese Falcon </div>
+  <div class="filterDiv drama passed eliakazan"> <h2> On The Waterfront </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/boekTHsOIY8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  On the Waterfront </div>
+  <div class="filterDiv crime passed orsonwelles">  <h2> Touch of Evil </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/V-Oqn2hMp1M"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    On the Waterfront </div>
+  <div class="filterDiv drama restricted stuartrosenberg"> <h2>Cool Hand Luke</h2> Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+  Watch the Trailer: <a href=https://youtu.be/ofxtDrRVQY4><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  To Kill a Mockingbird </div>
+  <div class="filterDiv drama passed robertmulligen">  <h2> To Kill a Mockingbird  </h2>  Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/KR7loA_oziY"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   To Kill a Mockingbird </div>
+  <div class="filterDiv comedy pg13 robertzemekis"> <h2>   Who Framed Roger Rabbit </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/gpDaNqSXxp0"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Who Framed Roger Rabbit </div>
+  <div class="filterDiv comedy passed leomcarey">    <h2> Duck Soup </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/9CEdb0sGfaI"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Duck Soup </div>
+  <div class="filterDiv comedy pg haroldramis">  <h2>  Groundhog Day </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/GncQtURdcE4"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Groundhog Day </div>
+  <div class="filterDiv drama passed johnhuston">   <h2>The Asphalt Jungle </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/IXrP6Uo4nUI"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  The Asphalt Jungle </div>
+  <div class="filterDiv fantasy general victorfleming"> <h2>The Wizard of Oz  </h2>  Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/njdreZRjvpc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Wizard of Oz </div>
+  <div class="filterDiv comedy restricted carlreiner">  <h2>       This is Spinal Tap  </h2>  Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/RyECdnkp5To"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  This Spinal Tap </div>
+  <div class="filterDiv western passed johnford"> <h2>The Man Who Shot Liberty Valance</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/Q6iEna2pJqM"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   The Man Who Shot Liberty Valance </div>
+  <div class="filterDiv comedy passed samwood"> <h2>A Night at The Opera </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/tu6COUl3fx8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   A Night at the Opera </div>
+  <div class="filterDiv drama passed mikenichols"><h2>Who's Afraid of Virginia Woolf </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/4vIUGN8CGjE"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Who's Afraid of Virginia Woolf </div>
+  <div class="filterDiv comedy restricted stanleykubrick"><h2>  Dr Strangelove </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/jPU1AYTxwg4"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Dr Strangelove </div>
+  <div class="filterDiv comedy restricted melbrooks"> <h2> Blazing Saddles</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/VKayG1TrfuE"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Blazing Saddles </div>
+  <div class="filterDiv horror passed charledlaughton"> <h2>Night of the Hunter</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/Nv2EI-E9mdg"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Night of the Hunter </div>
+  <div class="filterDiv scifi restricted johncarpenter">   <h2>The Thing </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/ySvzHdtCiWE"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  The Thing </div>
+  <div class="filterDiv western restricted clinteastwood">  <h2>Unforgiven </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/ftTX4FoBWlE"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Unforgiven </div>
+  <div class="filterDiv comedy restricted joelethancoen">  <h2>The Big Lebowski </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/8uU3ZrBQFA4"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   The Big Lebowski </div>                    
+  <div class="filterDiv action pg13 stevenspielberg">    <h2>Indiana Jones abd The Raiders of the Lost Ark</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/Rh_BJXG1-44"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Raiders of the Lost Ark </div>
+  <div class="filterDiv scifi restricted ridleyscott">  <h2>Blade Runner </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/eogpIG53Cis"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Blade Runner </div>
+  <div class="filterDiv war passed williamwyler"> <h2>The Best Years of Our Lives </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/1yc5PugV4mk"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   The Best Years of Our Lives </div>
+  <div class="filterDiv horror passed idalupino">  <h2>The Hitch-hiker </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/oFKpbMjba5c"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   The Htch-Hiker </div>
+  <div class="filterDiv comedy passed frankcapra">  <h2>It Happened One Night </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/k4fsS7Fjqzk"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   It Happened One Night </div>
+  <div class="filterDiv comedy passed prestonsturgis"> <h2>Sullivan's Travels</h2>  Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/HUNHxGDLfIE"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Singing in the Railroad </div>
+  <div class="filterDiv musical passed genekelly"><h2> Singing in the Rain </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/5_EVHeNEIJY"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Singing in the Railroad </div>
+  <div class="filterDiv thriller passed alfredhitchcock">  <h2>Psycho </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>               
+    Watch the Trailer: <a href="https://youtu.be/DTJQfFQ40lI"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Psycho </div>
+  <div class="filterDiv drama pg johnavildson"> <h2>Rocky</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/3VUblDwa648"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+     Rocky </div>
+  <div class="filterDiv comedy restricted melbrooks"><h2>    Young Frankenstein </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/ZL9Q_0JtMNA"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Young Frankenstein </div>                    
+  <div class="filterDiv horror restricted stevenspielberg"><h2>    Jaws </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/4pxkU9GVAoA"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Jaws </div>
+  <div class="filterDiv western passed fredzimmerman"> <h2>  High Noon</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/g9CR_tib0CA"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   High Noon </div>
+  <div class="filterDiv horror restricted johncarpenter"> <h2>Halloween </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/T5ke9IPTIJQ"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Halloween </div>
+  <div class="filterDiv comedy pg haroldramis">  <h2>Ghostbusters</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/wQAljlSmjC8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Ghostbusters </div>
+  <div class="filterDiv scifi general georgelucas"> <h2><h2>Star Wars</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/1g3_CFmnU7k"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Star Wars </div>
+  <div class="filterDiv thriller passed alfredhitchcock"><h2> Shadow of a Doubt</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/HHEu5vXUusc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Shadow of the Doubt </div>
+  <div class="filterDiv comedy restricted joelethancoen"> <h2>Raising Arizona</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/OjWu8i6eMZo"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Raising Arizonia </div>
+  <div class="filterDiv comedy pg13 pennymarshal"> <h2>Big </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/hZpm1zj9510"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Big </div>
+  <div class="filterDiv crime unrated arthurpenn">  <h2>Bonnie & Clyde </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/hZpm1zj9510"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Bonnie and Clyde </div>
+  <div class="filterDiv scifi restricted stanleykubrick"><h2>  A Clockwork Orange</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/SPRzm8ibDQ8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   A Clockwork Orange </div>
+  <div class="filterDiv western passed johnford"> <h2> Stagecoach </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/OE-VWDsdkwM"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+   Stagecoach </div>
+  <div class="filterDiv comedy restricted wesanderson"> <h2> The Royal Tennenbaums</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/pOk0fsMGyck"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    The Royal Tennenbaums </div>
+  <div class="filterDiv comedy pg haroldramis"> <h2> Natonal Lampoon's Vacation</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/FHThGmVfE3A"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Nation Lampoon's Vacation </div>                    
+  <div class="filterDiv western unrated sampeckinpaw">  <h2>The Wild Bunch </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/kdy0t_8mQBw"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  The Wild Bunch </div>
+  <div class="filterDiv drama passed sidneylumet"> <h2>12 Angry Men </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>       
+    Watch the Trailer: <a href="https://youtu.be/_13J_9B5jEk"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  12 Angry Men </div>
+  <div class="filterDiv scifi restricted ridleyscott">   <h2> Alien </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/LjLamj-b0I8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Alien </div>
+  <div class="filterDiv comedy resricted johnlandis"><h2>  Coming To America </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/KFroCRDXw5E"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Coming to America </div> 
+  <div class="filterDiv fantasy general melstuart">    <h2>Willy Wonka and The Chocolate Factory</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/2cBja3AbahY"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Willy Wonka and The Chocalate Factory </div>
+  <div class="filterDiv action restricted johnmctieran">   <h2>Die Hard </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>    
+    Watch the Trailer: <a href="https://youtu.be/QIOX44m8ktc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Die Hard </div>
+  <div class="filterDiv weastern restricted joelethancoen"> <h2>No Country For Old Men</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>   
+    Watch the Trailer: <a href="https://youtu.be/qnwNuG1ayno"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+     No Country for Old Men </div>                    
+  <div class="filterDiv comedy restricted richardlinkletter">  <h2>Dazed and Confused </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>   
+    Watch the Trailer: <a href="https://youtu.be/3aQuvPlcB-8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Dazed and Confused </div>
+  <div class="filterDiv western passed johnford">   <h2>The Searchers </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/ii_7QnXPQxA"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  The Searchers </div>
+  <div class="filterDiv scifi pg13 robertzemekis">    <h2> Back to the Future </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/qvsgGtivCgs"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Back to the Future </div>
+  <div class="filterDiv comedy pg johnhughes">    <h2>   Planes Trains and Automobiles </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>   
+    Watch the Trailer: <a href="https://youtu.be/ZfnvrPZSFb8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Planes Trains and Automobiles </div>
+  <div class="filterDiv crime restricted curtishanson"> <h2>   LA Confidential    </h2>Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/6sOXrY5yV4g"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  LA Confidential </div>
+  <div class="filterDiv drama passed johnford"><h2>        The Grapes of Wraith   </h2> Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/fOuAZLA_jWQ"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  The Grapes of Wraith </div>
+  <div class="filterDiv comedy passed howardhawks"><h2>      Bringing up Baby</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/F25nzu6hh0Q"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Bringing up Baby </div>
+  <div class="filterDiv horror restricted wescraven"><h2>         Scream</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/AWm_mkbdpCA"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Scream </div>
+  <div class="filterDiv comedy general bobclark"> <h2>      A Christmas Story </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/cfjEZ88NHBw"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  A Christmas Story </div>
+  <div class="filterDiv drama passed howardhawks"><h2>      To Have or Have Not</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/EBM5Bte4ltg"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  To Have or Have Not </div>
+  <div class="filterDiv horror restricted stanleykubrick"><h2> The Shining</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/S014oGZiSdI"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  The Shining </div>
+  <div class="filterDiv comedy restricted timburton">  <h2>Ed Wood</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/sqFPKpzGimI"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    Ed Wood </div>
+  <div class="filterDiv drama passed frankcapra">        <h2> Mr Smith Goes to Washington </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/mpJSB4Gbljc"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Mr Smith Goes to Washington </div>
+  <div class="filterDiv comedy passed prestonsturgis">    <h2> Hail the Conquering Hero</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/hAcWVShqNS8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Hail the Conquering Hero </div>
+  <div class="filterDiv action restricted tedkotcheff">    <h2> First Blood </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/IAqLKlxY3Eo"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  First Blood </div>
+  <div class="filterDiv crime restricted sidneylumet">   <h2>Dog Day Afternoon</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/Ne6KMHLTvik"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Dog Day Afternoon </div>
+  <div class="filterDiv scifi restricted jamescameron">  <h2>The Terminator</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/k64P4l2Wmeg"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+     The Terminator </div>                    
+  <div class="filterDiv scifi general stevenspielberg">     <h2>E.T. The Extraterrestrial</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/qYAETtIIClk"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  E.T. The Extraterrestrial </div>
+  <div class="filterDiv horror restricted edgarwright">  <h2>Shaun of the Dead </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/f9XZqB6pI5E"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    Shaun of the Dead </div>
+  <div class="filterDiv comedy passed prestonsturgis">  <h2>The Lady Eve</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/ZeVAJre7PWU"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    The Lady Eve </div>
+  <div class="filterDiv thriller passed alfredhitchcock">   <h2>    North by Northwest</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/ek7T9Gyl_J4"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  North by Northwest </div>
+  <div class="filterDiv war restricted franciusfordcoppola">   <h2> Apocalypse Now </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/FTjG-Aux_yQ"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Apocalypse Now </div>
+  <div class="filterDiv comedy pg13 amyheckerling"> <h2>   Clueless </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></a>  
+    Watch the Trailer: <a href="https://youtu.be/3zuRkQSx5gs"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Clueless </div>
+  <div class="filterDiv drama restricted martinscorsese"><h2>  Taxi Driver </h2>   Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>
+    Watch the Trailer: <a href="https://youtu.be/KS-X4lccAq8"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    Taxi Driver </div>
+  <div class="filterDiv war restricted oliverstone">  <h2> Platoon</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/hGsyEkfjhQk"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Platoon </div>
+  <div class="filterDiv horror restricted robertaldrich">  <h2> Whatever Happened to Baby Jane</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/Cth9aakWf38"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  What Ever Happened to Baby Jane </div>
+  <div class="filterDiv horror restricted jordanpeele">  <h2>Get Out</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/DzfpyUB60YY"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+    Get Out </div>
+  <div class="filterDiv drama restricted davidfincher">   <h2>Fight Club</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/qtRKdVHc-cE"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Fight CLub </div>
+  <div class="filterDiv comedy passed howardhawks">     <h2>  Gentleman Prefer Blondes</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>   
+    Watch the Trailer: <a href="https://youtu.be/Mu3GS08JkW0"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Gentlemen Prefer Blondes </div>
+  <div class="filterDiv musical restricted randalkleiser">  <h2>  Grease</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a>  
+    Watch the Trailer: <a href="https://youtu.be/qDKo8DNpwOw"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Grease </div>
+  <div class="filterDiv action pg13 edgarwright">              <h2> Scott Pilgrim Versus the World</h2>    Learn more about the director<br><a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a> 
+    Watch the Trailer: <a href="https://youtu.be/7wd5KEaOtm4"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a>  
+  Scott Pilgrim versus the World </div>
+  </div>
+  
+  <style>
+    .filterDiv {
+      float: left;
+      background-color: #2196F3;
+      color: #ffffff;
+      width: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin: 2px;
+      display: none;
+    }
+    
+    .show {
+      display: block;
+    }
+    
+    .container {
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+    </style>
+    <body>
       
-      </div>
-
-    </body>
-
-    <footer class="footer">
-      &#169 2020 PFI Media &nbsp;
-     </footer>.
-      </html>
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+  
+  </body>
+  </html>
+  

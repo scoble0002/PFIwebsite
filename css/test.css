@@ -1,318 +1,38 @@
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-    /*Change the link color to #111 (black) on hover*/
-    ol li a:hover {
-      background-color: #111;
-    }
-    
-    /*movie list*/
-  
-    ol {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      max-width: 300px;
-      margin: 10px auto;
-      padding: 10px 20px;
-      background: purple;
-      border-radius: 8px;
-    }
-    
-    ol li {
-      float: center;
-    }
-    
-    ol li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-      
-  
-  
-  
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: blue;
-    color: white;
-    text-align: right;
-  }
-  
-  .platypusHeader {
-    margin: 0;
-  }
-  
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    display: flex;
-    flex-direction: column; /* creates rows out of the elements main and footer */
-    height: 100vh; 
-    margin:0;
-  }
-  
-  main {
-    flex: 1 0 auto; /* allows the content to grow but not shrink */
-  }
-  
-  
-  div {
-    margin: 0 0 30px 0;
-    text-align: center;
-  }
-  
-  
-  h1 {
-    margin: 0 0 30px 0;
-    text-align: center;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: white;
-    border-radius: 8px;
-  }
-  
-  p {
-    color: pink;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: black;
-    border-radius: 8px;
-  }
-  
-  h2 {
-    margin: 0 0 30px 0;
-    text-align: center;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: white;
-    border-radius: 8px;
-  }
-  
-  p2 {
-    color: orange;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: black;
-    border-radius: 8px;
-  }
-  
-  form {
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: silver;
-    border-radius: 8px;
-  }
-  
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="favorite"],
-  input[type="randomMovie"],
-  textarea,
-  
-  select {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-  }
 
-  
-  select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-  }
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
 
-  
-  button {
-    padding: 19px 39px 18px 39px;
-    color: white;
-    background-color: grey;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid red;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
-  }
+.show {
+  display: block;
+}
 
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
 
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
 
+.btn:hover {
+  background-color: #ddd;
+}
 
-  /*congratulation Screen*/
-  body {
-    font-family: 'Lato', sans-serif;
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    vertical-align: middle;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  
-  .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 750%;
-    color: limegreen;
-  }
-  
-  
-  
-  }
-  
-  /*contact page icons*/
-            .fa {
-              padding: 20px;
-              font-size: 30px;
-              width: 50px;
-              text-align: center;
-              text-decoration: none;
-              margin: 5px 2px;
-            }
-            
-            .fa:hover {
-                opacity: 0.7;
-            }
-            
-            .fa-facebook {
-              background: #3B5998;
-              color: white;
-            }
-            
-            .fa-twitter {
-              background: #55ACEE;
-              color: white;
-            }
-                      
-            .fa-youtube {
-              background: #bb0000;
-              color: white;
-            }
-            
-            .fa-instagram {
-              background: #125688;
-              color: white;
-            }
-            
-            h3 {
-              margin: 0 0 30px 0;
-              text-align: center;
-              max-width: 600px;
-              margin: 10px auto;
-              padding: 10px 20px;
-              background: white;
-              border-radius: 8px;
-  
-            }
-  
-  /* Media Queries  */
-  
-  
-  /* small devices  */
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: red;
-    }
-  }
-  
-  /* medium devices  */
-  @media only screen and (min-width: 600px) {
-    body {
-      background-color: blue;
-    }
-  }
-  
-  
-  /* large devices  */
-  @media only screen and (min-width: 1200px) {
-    body {
-      background-color: black;
-    }
-  }
-  
-  /* Congratulation scree */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
-  
-  
-  
+.btn.active {
+  background-color: #666;
+  color: white;
+}

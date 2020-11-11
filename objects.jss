@@ -1,105 +1,297 @@
-                   <div class="filterDiv horror restricted">Halloween</div>   
-                    
-                    
-                    <div class="filterDiv drama passed orsonwelles">Citizen Kane</div>
-                    <div class="filterDiv comedy passed billywilder"> The Apartment </div>
-                    <div class="filterDiv drama restricted joelethancoen"> Fargo </div>
-                    <div class="filterDiv drama passed josephmankeiwicz"> All ABout Eve </div>
-                    <div class="filterDiv drama passed michaelcurtiz"> Casablanca </div>
-                    <div class="filterDiv crime passed billywilder"> Double Indemity </div>
-                    <div class="filterDiv drama passed eliakazan"> A Face in the Crowd </div>
-                    <div class="filterDiv drama restricted spikelee"> Do the Right Thing </div>
-                    <div class="filterDiv western passed johnhuston"> The Treasure of the Sierra Madre </div>
-                    <div class="filterDiv drama restricted paulthomasanderson"> Boogie Nights </div>
-                    <div class="filterDiv thriller passed alfredhitchcock"> Rear Window </div>
-                    <div class="filterDiv crime restricted quentintarentino"> Pulp Fiction </div>
-                    <div class="filterDiv comedy restricted amyheckerling"> Fast TImes at Ridgemont High </div>
-                    <div class="filterDiv drama restricted johnsingleton"> Boyz n the Hood </div>
-                    <div class="filterDiv drama unrated johnschlesinger"> Midnight Cowboy </div>
-                    <div class="filterDiv drama passed billywilder"> Sunset Boulevard </div>
-                    <div class="filterDiv thriller passed alfredhitchcock"> Vertigo </div>
-                    <div class="filterDiv comedy passed billywilder"> Some Like it Hot </div>
-                    <div class="filterDiv crime passed johnhuston"> The Maltese Falcon </div>
-                    <div class="filterDiv drama passed eliakazan"> On the Waterfront </div>
-                    <div class="filterDiv crime passed orsonwelles">Touch of Evil</div>
-                    <div class="filterDiv drama restricted stuartrosenberg"> Cool Hand Luke </div>
-                    <div class="filterDiv drama passed robertmulligen"> To Kill a Mockingbird </div>
-                    <div class="filterDiv comedy pg13 robertzemekis"> Who Framed Roger Rabbit </div>
-                    <div class="filterDiv comedy passed leomcarey"> Duck Soup </div>
-                    <div class="filterDiv comedy pg haroldramis"> Groundhog Day </div>
-                    <div class="filterDiv drama passed johnhuston"> The Asphalt Jungle </div>
-                    <div class="filterDiv fantasy general victorfleming"> Wizard of Oz </div>
-                    <div class="filterDiv comedy restricted carlreiner"> This Spinal Tap </div>
-                    <div class="filterDiv western passed johnford"> The Man Who Shot Liberty Valance </div>
-                    <div class="filterDiv comedy passed samwood"> A Night at the Opera </div>
-                    <div class="filterDiv drama passed mikenichols"> Who's Afraid of Virginia Woolf </div>
-                    <div class="filterDiv comedy restricted stanleykubrick"> Dr Strangelove </div>
-                    <div class="filterDiv comedy restricted melbrooks"> Blazing Saddles </div>
-                    <div class="filterDiv horror passed charledlaughton"> Night of the Hunter </div>
-                    <div class="filterDiv scifi restricted johncarpenter"> The Thing </div>
-                    <div class="filterDiv western restricted clinteastwood"> Unforgiven </div>
-                    <div class="filterDiv comedy restricted joelethancoen"> The Big Lebowski </div>                    
-                    <div class="filterDiv action pg13 stevenspielberg"> Raiders of the Lost Ark </div>
-                    <div class="filterDiv scifi restricted ridleyscott"> Blade Runner </div>
-                    <div class="filterDiv war passed williamwyler"> The Best Years of Our Lives </div>
-                    <div class="filterDiv horror passed idalupino"> The Htch-Hiker </div>
-                    <div class="filterDiv comedy passed frankcapra"> It Happened One Night </div>
-                    <div class="filterDiv comedy passed prestonsturgis"> Sullivan's Travels </div>
-                    <div class="filterDiv musical passed genekelly"> Singing in the Railroad </div>
-                    <div class="filterDiv thriller passed alfredhitchcock"> Psycho </div>
-                    <div class="filterDiv drama pg johnavildson"> Rocky </div>
-                    <div class="filterDiv comedy restricted melbrooks"> Young Frankenstein </div>                    
-                    <div class="filterDiv horror restricted stevenspielberg"> Jaws </div>
-                    <div class="filterDiv western passed fredzimmerman"> High Noon </div>
-                    <div class="filterDiv horror restricted johncarpenter"> Halloween </div>
-                    <div class="filterDiv comedy pg haroldramis"> Ghostbusters </div>
-                    <div class="filterDiv scifi general georgelucas"> Star Wars </div>
-                    <div class="filterDiv thriller passed alfredhitchcock"> Shadow of the Doubt </div>
-                    <div class="filterDiv comedy restricted joelethancoen"> Raising Arizonia </div>
-                    <div class="filterDiv comedy pg13 pennymarshal"> Big </div>
-                    <div class="filterDiv crime unrated arthurpenn"> Bonnie and Clyde </div>
-                    <div class="filterDiv scifi restricted stanleykubrick"> A Clockwork Orange </div>
-                    <div class="filterDiv western passed johnford"> Stagecoach </div>
-                    <div class="filterDiv comedy restricted wesanderson"> The Royal Tennenbaums </div>
-                    <div class="filterDiv comedy pg haroldramis"> Nation Lampoon's Vacation </div>                    
-                    <div class="filterDiv western unrated sampeckinpaw"> The Wild Bunch </div>
-                    <div class="filterDiv drama passed sidneylumet"> 12 Angry Men </div>
-                    <div class="filterDiv scifi restricted ridleyscott"> Alien </div>
-                    <div class="filterDiv comedy resricted johnlandis"> Coming to America </div> 
-                    <div class="filterDiv fantasy general melstuart"> Willy Wonka and The Chocalate Factory </div>
-                    <div class="filterDiv action restricted johnmctieran"> Die Hard </div>
-                    <div class="filterDiv weastern restricted joelethancoen"> No Country for Old Men </div>                    
-                    <div class="filterDiv comedy restricted richardlinkletter"> Dazed and Confused </div>
-                    <div class="filterDiv western passed johnford"> The Searchers </div>
-                    <div class="filterDiv scifi pg13 robertzemekis"> Back to the Future </div>
-                    <div class="filterDiv comedy pg johnhughes"> Planes Trains and Automobiles </div>
-                    <div class="filterDiv crime restricted curtishanson"> LA Confidential </div>
-                    <div class="filterDiv drama passed johnford"> The Grapes of Wraith </div>
-                    <div class="filterDiv comedy passed howardhawks"> Bringing up Baby </div>
-                    <div class="filterDiv horror restricted wescraven"> Scream </div>
-                    <div class="filterDiv comedy general bobclark"> A Christmas Story </div>
-                    <div class="filterDiv drama passed howardhawks"> To Have or Have Not </div>
-                    <div class="filterDiv horror restricted stanleykubrick"> The Shining </div>
-                    <div class="filterDiv comedy restricted timburton"> Ed Wood </div>
-                    <div class="filterDiv drama passed frankcapra"> Mr Smith Goes to Washington </div>
-                    <div class="filterDiv comedy passed prestonsturgis"> Hail the Conquering Hero </div>
-                    <div class="filterDiv action restricted tedkotcheff"> First Blood </div>
-                    <div class="filterDiv crime restricted sidneylumet"> Dog Day Afternoon </div>
-                    <div class="filterDiv scifi restricted jamescameron"> The Terminator </div>                    
-                    <div class="filterDiv scifi general stevenspielberg"> E.T. The Extraterrestrial </div>
-                    <div class="filterDiv horror restricted edgarwright"> Shaun of the Dead </div>
-                    <div class="filterDiv comedy passed prestonsturgis"> The Lady Eve </div>
-                    <div class="filterDiv thriller passed alfredhitchcock"> North by Northwest </div>
-                    <div class="filterDiv war restricted franciusfordcoppola"> Apocalypse Now </div>
-                    <div class="filterDiv comedy pg13 amyheckerling"> Clueless </div>
-                    <div class="filterDiv drama restricted martinscorsese"> Taxi Driver </div>
-                    <div class="filterDiv war restricted oliverstone"> Platoon </div>
-                    <div class="filterDiv horror restricted robertaldrich"> What Ever Happened to Baby Jane </div>
-                    <div class="filterDiv horror restricted jordanpeele"> Get Out </div>
-                    <div class="filterDiv drama restricted davidfincher"> Fight CLub </div>
-                    <div class="filterDiv comedy passed howardhawks"> Gentlemen Prefer Blondes </div>
-                    <div class="filterDiv musical restricted randalkleiser"> Grease </div>
-                    <div class="filterDiv action pg13 edgarwright"> Scott Pilgrim versus the World </div>
+ <li>The Apartment   <br> Directed by  <br>  Billy Wilder</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/GX9-5Zxy5us"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Fargo   <br> Directed by  <br>  Joel & Ethan Coen </li>
+              <li>Watch the Trailer: <a href="https://youtu.be/h2tY82z3xXU"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>All About Eve   <br> Directed by  <br>  Joseph Mankeiwicz</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/MILphnfj2mo"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Casablanca   <br> Directed by  <br>  Michael Curtiz </li>
+              <li>Watch the Trailer: <a href="https://youtu.be/S9ID5DHsX8g"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Double Idemnity   <br> Directed by  <br>  Billy Wilder</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/yKrrAa2o9Eg"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>A Face In The Crowd   <br> Directed by  <br>  Elia Kazan</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/6Dicfa65I2E"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Do The Right Thing   <br> Directed by  <br>  Spike Lee</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/LKeWrdPsYAc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Treasure of Sierra Madra   <br> Directed by  <br>  John Huston</li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/x5XgGjGbQzc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br> 
+            
+              <li>Boogie Nights   <br> Directed by  <br>  Paul Thomas Anderson</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/pOk0fsMGyck"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Rear Window   <br> Directed by  <br>  Alfred Hitchcock</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/m01YktiEZCw"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>A Streetcar Named Desire   <br> Directed by  <br>  Elia Kazan</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/FVDecBMyyZI"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Pulp Fiction   <br> Directed by  <br>  Quentin Tarentino</li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/s7EdQ4FqbhY"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Fast Times at Ridgemont High   <br> Directed by  <br>  Amy Heckerling</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/vzva_I8WPAg"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Boyz n tha Hood   <br> Directed by  <br>  John Singleton</li>              
+              <li>Watch the Trailer: <a href="https://youtu.be/sLgCCdLbQNc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Midnight Cowboy   <br> Directed by  <br>  John Schlesinger </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/vS2IdfBkkj0"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Sunset Boulevard   <br> Directed by  <br>  Billy Wilder</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/_dY0SVxnHjQ"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Vertigo   <br> Directed by  <br>  Alfred Hitchcock</li>               
+              <li>Watch the Trailer: <a href="https://youtu.be/Z5jvQwwHQNY"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Some Like It Hot   <br> Directed by  <br>  Billy Wilder</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/CPkQ2OQAJSU"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Maltese Falcon   <br> Directed by  <br>  John Huston</li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/boZoLR17If8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>On The Waterfront   <br> Directed by  <br>  Elia Kazan</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/boekTHsOIY8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Touch of Evil   <br> Directed by  <br>  Orson Welles</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/V-Oqn2hMp1M"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Cool Hand Luke   <br> Directed by  <br>  Stuart Rosenberg </li>
+              <li>Watch the Trailer: <a href="https://youtu.be/ofxtDrRVQY4"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>To Kill a Mockingbird   <br> Directed by  <br>  Robert Mulligen</li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/KR7loA_oziY"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Who Framed Roger Rabbit   <br> Directed by  <br>  Robert Zemekis</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/gpDaNqSXxp0"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Duck Soup   <br> Directed by  <br>  Leo McCarey</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/9CEdb0sGfaI"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Groundhog Day   <br> Directed by  <br>  Harold Ramis</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/GncQtURdcE4"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Asphalt Jungle   <br> Directed by  <br>  John Huston</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/IXrP6Uo4nUI"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Wizard of Oz   <br> Directed by  <br>  Victor Fleming</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/njdreZRjvpc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>This is Spinal Tap   <br> Directed by  <br>  Carl Reiner</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/RyECdnkp5To"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Man Who Shot Liberty Valance   <br> Directed by  <br>  John Ford</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/Q6iEna2pJqM"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>A Night at The Opera   <br> Directed by  <br>  Sam Wood</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/tu6COUl3fx8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Who's Afraid of Virginia Woolf   <br> Directed by  <br>  Mike Nichols</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/4vIUGN8CGjE"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Dr Strangelove   <br> Directed by  <br>  Stanley Kubrick</li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/jPU1AYTxwg4"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Blazing Saddles   <br> Directed by  <br>  Mel Brooks</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/VKayG1TrfuE"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Night of the Hunter   <br> Directed by  <br>  Charles Laughton </li>
+              <li>Watch the Trailer: <a href="https://youtu.be/Nv2EI-E9mdg"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Thing   <br> Directed by  <br>  John Carpenter</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/ySvzHdtCiWE"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Unforgiven   <br> Directed by  <br>  Clint Eastwood </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/ftTX4FoBWlE"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Big Lebowski   <br> Directed by  <br>  Joel & Ethan Coen</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/8uU3ZrBQFA4"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Indiana Jones abd The Raiders of the Lost Ark   <br> Directed by  <br>  Steven Spielberg </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/Rh_BJXG1-44"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Blade Runner   <br> Directed by  <br>  Ridley Scott </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/eogpIG53Cis"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Best Years of Our Lives   <br> Directed by  <br>  William Wyler </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/1yc5PugV4mk"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Hitch-hiker   <br> Directed by  <br>  Ida Lupino</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/oFKpbMjba5c"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>It Happened One Night   <br> Directed by  <br>  Frank Capra </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/k4fsS7Fjqzk"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Singing in the Rain   <br> Directed by  <br>  Gene Kelly </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/5_EVHeNEIJY"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Psycho   <br> Directed by  <br>  Alfred Hitchcock</li>               
+              <li>Watch the Trailer: <a href="https://youtu.be/DTJQfFQ40lI"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Rocky   <br> Directed by  <br>  John Avildson </li> 
+            <li>Watch the Trailer: <a href="https://youtu.be/3VUblDwa648"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Young Frankenstein   <br> Directed by  <br>  Mel Brooks </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/ZL9Q_0JtMNA"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Jaws   <br> Directed by  <br>  Steven Spielberg </li>
+              <li>Watch the Trailer: <a href="https://youtu.be/4pxkU9GVAoA"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>High Noon   <br> Directed by  <br>  Fred Zimmerman</li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/g9CR_tib0CA"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Halloween   <br> Directed by  <br>  John Carpenter</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/T5ke9IPTIJQ"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Ghostbusters   <br> Directed by  <br>  Harold Ramis </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/wQAljlSmjC8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Star Wars   <br> Directed by  <br>  George Lucas </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/1g3_CFmnU7k"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Shadow of a Doubt   <br> Directed by  <br>  Alfred Hitchcock </li> 
+              <li>Watch the Trailer: <a href="https://youtu.be/HHEu5vXUusc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Raising Arizona   <br> Directed by  <br>  Joel & Ethan Coen </li>
+              <li>Watch the Trailer: <a href="https://youtu.be/OjWu8i6eMZo"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Big   <br> Directed by  <br>  Penny Marshal</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/hZpm1zj9510"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Bonnie & Clyde   <br> Directed by  <br>  Arthur Penn</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/hZpm1zj9510"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>A Clockwork Orange   <br> Directed by  <br>   Stanley Kubrick</li>
+              <li>Watch the Trailer: <a href="https://youtu.be/SPRzm8ibDQ8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Stagecoach   <br> Directed by  <br>  John Ford</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/OE-VWDsdkwM"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>The Royal Tennenbaums   <br> Directed by  <br>  Paul Thomas Anderson</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/pOk0fsMGyck"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>Natonal Lampoon's Vacation   <br> Directed by  <br>  Harold Ramis</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/FHThGmVfE3A"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+            
+              <li>>The Wild Bunch   <br> Directed by  <br>  Sam Peckinpaw</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/kdy0t_8mQBw"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>12 Angry Men   <br> Directed by  <br>  Sidney Lumet</a> </li> <br>              
+              <li>Watch the Trailer: <a href="https://youtu.be/_13J_9B5jEk"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Alien   <br> Directed by  <br>  Ridley Scott</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/LjLamj-b0I8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Coming To America   <br> Directed by  <br>  John Landis</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/KFroCRDXw5E"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Willy Wonka and The Chocolate Factory   <br> Directed by  <br>  Mel Stuart</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/2cBja3AbahY"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Die Hard   <br> Directed by  <br>  John McTieran</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/QIOX44m8ktc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>No Country For Old Men   <br> Directed by  <br>  Joel and Ethan Coen</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/qnwNuG1ayno"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Dazed and Confused   <br> Directed by  <br>  Richard Linkletter</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/3aQuvPlcB-8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>The Searchers   <br> Directed by  <br>  John Ford</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/ii_7QnXPQxA"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Back to the Future   <br> Directed by  <br>  Robert Zemekis</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/qvsgGtivCgs"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Planes Trains and Automobiles   <br> Directed by  <br>  John Hughes</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/ZfnvrPZSFb8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>LA Confidential   <br> Directed by  <br>  Curtis Hanson</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/6sOXrY5yV4g"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>The Grapes of Wraith   <br> Directed by  <br>  John Ford</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/fOuAZLA_jWQ"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Bringing up Baby   <br> Directed by  <br>  Howard Hawks</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/F25nzu6hh0Q"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Scream   <br> Directed by  <br>  Wes Craven</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/AWm_mkbdpCA"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>A Christmas Story   <br> Directed by  <br>  Bob Clark </li>  <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/cfjEZ88NHBw"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>To Have or Have Not   <br> Directed by  <br>  Howard Hawks </li>  <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/EBM5Bte4ltg"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+                                  
+              <li>The Shining   <br> Directed by  <br>  Stanley Kubrick </li>  <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/S014oGZiSdI"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Ed Wood   <br> Directed by  <br>  Tim Burton</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/sqFPKpzGimI"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Mr Smith Goes to Washington   <br> Directed by  <br>  Frank Capra</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/mpJSB4Gbljc"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Hail the Conquering Hero   <br> Directed by  <br>  Preston Sturgis</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/hAcWVShqNS8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>First Blood   <br> Directed by  <br>  Ted Kotcheff</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/IAqLKlxY3Eo"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Dog Day Afternoon   <br> Directed by  <br>  Sidney Lumet</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/Ne6KMHLTvik"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>The Terminator   <br> Directed by  <br>  James Cameron</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/k64P4l2Wmeg"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>E.T. The Extraterrestrial   <br> Directed by  <br>  Steven Spielberg</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/qYAETtIIClk"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Shaun of the Dead   <br> Directed by  <br>  Edger Wright</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/f9XZqB6pI5E"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>The Lady Eve   <br> Directed by  <br>  Preston Sturgis</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/ZeVAJre7PWU"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>North by Northwest   <br> Directed by  <br>  Alfred Hitchcock</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/ek7T9Gyl_J4"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Apocalypse Now   <br> Directed by  <br>  Francis Ford Coppola</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/FTjG-Aux_yQ"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Clueless   <br> Directed by  <br>  Amy Heckerling</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/3zuRkQSx5gs"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Taxi Driver   <br> Directed by  <br>  Martin Scorsese</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/KS-X4lccAq8"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Platoon   <br> Directed by  <br>  Oliver Stone</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/hGsyEkfjhQk"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Whatever Happened to Baby Jane   <br> Directed by  <br>  Robert Aldrich</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/Cth9aakWf38"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
+              <li>Get Out   <br> Directed by  <br>  Jordan Peele</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/DzfpyUB60YY"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Fight Club   <br> Directed by  <br>  David Fincher</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/qtRKdVHc-cE"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Gentleman Prefer Blondes   <br> Directed by  <br>  Howard Hawks</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/Mu3GS08JkW0"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Grease   <br> Directed by  <br>  Randal Kleiser</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/qDKo8DNpwOw"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+              
+              <li>Scott Pilgrim Versus the World   <br> Directed by  <br>  Edger Wright</a> </li> <br>
+              <li>Watch the Trailer: <a href="https://youtu.be/7wd5KEaOtm4"><img border="0" alt="W3Schools" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a> </li> <br>
+
 
 
 
