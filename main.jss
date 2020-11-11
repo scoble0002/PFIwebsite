@@ -31,7 +31,7 @@ function findMovie() {
     document.getElementById("myPic").style.width = "0%";
   }
 
-  //---------------------pfilist sorter-------------------//
+  //---------------------pfi list sorter-------------------//
 
   
 filterSelection("all")
@@ -50,7 +50,7 @@ function pfiAddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    if (arr1.indexOf(arr2[i]) == -1) {elem ent.className += " " + arr2[i];}
   }
 }
 
@@ -67,8 +67,8 @@ function pfiRemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+var sortContainer = document.getElementById("mySortContainer");
+var btns = sortContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
