@@ -57,84 +57,71 @@
 
     
 
-        <h1> Become a Platypus It's Free! </h1>
-          
-        <body>
-          
-            <div class="container">
-     <form>
-       
-             <label for="pname">Platypus Name</label>
-             <input type="text" id="pname" value="">
-         
-             <label for="password">Password</label>
-             <input type="text" id="password" name="userpassword" placeholder="Your password..">
-      
-             <label for="password">Confirm Password</label>
-             <input type="text" id="password" name="userpassword" placeholder="Your password..">
-          
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="useremail" placeholder="Your Email..">
-                
-              <label for="favorite">Favorite Movie</label>
-              <input type="text" id="favorite" name="favoriteMovie" placeholder="Your current favorite movie..">
-      
-      
-             <label><input type="checkbox" checked="checked" name="subscribe"> Recieve PFI Newsletter</label
-            
-            </form>
-       
-            <button type="button"  onclick="openPic()">&#9776; Become a Platypus! </button>
-       
 
-        </div>
-
-        <div id="myPic" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
-          <div class="overlay-content">
-            <div class="container">
-            <img src="https://i.pinimg.com/originals/10/8f/7a/108f7aa6aa59c941a79ba804aa171b51.jpg" alt="platypusImage" style="width:80%;height:80%;">
-            <div class="centered">Congratulations<br><p5 id="demo"></p5><br> You're a<br> Platypus!</div>
-          </div>
-          </div>
-        </div>
-        
-
+   <h1> Become a Platypus It's Free! </h1>
           
+   <body>
+     
+       <div class="container">
+<form id="myForm"  action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+  Name: <input type="text" name="pname">
+  <input type="submit" value="Submit">>
+  
+        <label for="pname">Platypus Name</label>
+        <input type="text" id="pname" name="pname" value="" >
+    
+        <label for="password">Password</label>
+        <input type="text" id="password" name="userpassword" >
+ 
+        <label for="password">Confirm Password</label>
+        <input type="text" id="password" name="userpassword" >
+     
+         <label for="email">Your Email</label>
+         <input type="email" id="email" name="useremail" >
+           
+         <label for="favorite">Favorite Movie</label>
+         <input type="text" id="favorite" name="favoriteMovie" >
+ 
+ 
+        <label><input type="checkbox" checked="checked" name="subscribe"> Recieve PFI Newsletter</label
+       
+       </form>
+  
+       <button type="button"  onclick="validateForm()">&#9776; Become a Platypus! </button>
+  
+
+   </div>
+
+   <div id="myPic" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
+     <div class="overlay-content">
+       <div class="container">
+       <img src="https://i.pinimg.com/originals/10/8f/7a/108f7aa6aa59c941a79ba804aa171b51.jpg" alt="platypusImage" style="width:80%;height:80%;">
+       <div class="centered">Congratulations<br><p5 id="demo"></p5><br> You're a<br> Platypus!</div>
+     </div>
+     </div>
+   </div>
+   
+
+     
 
 
 
 </body>
 
-<style>
-
-p5 {
-  color: limegreen;
-  text-align: center;
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-</style>
-
-
 <script>
 
-function openPic() {
-    document.getElementById("myPic").style.width = "100%";
-    let x = 
-  document.getElementById("pname").value;
-  document.getElementById("demo").innerHTML = x;
-  }
-  
-  function closePic() {
-    document.getElementById("myPic").style.width = "0%";
-  }
+function validateForm() {
+  var z = document.forms["myForm"]["pname"].value;
+  if (z == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  } else 
+}
+
 
 
 </script>
 
 
-        </html>
+   </html>

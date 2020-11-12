@@ -23,6 +23,7 @@ function findMovie() {
 
 
 //----------------------congratulation screen-------------//
+
 function openPic() {
 document.getElementById("myPic").style.width = "100%";
 let x = 

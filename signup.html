@@ -66,7 +66,7 @@
 <form id="myForm">
   
         <label for="pname">Platypus Name</label>
-        <input type="text" id="pname" value="">
+        <input type="text" id="pname" value="" >
     
         <label for="password">Password</label>
         <input type="text" id="password" name="userpassword" >
@@ -107,13 +107,15 @@
 
 </body>
 
-<style>
-
-</style>
-
-
 <script>
 
+function validateForm() {
+  var z = document.forms["myForm"]["pname"].value;
+  if (z == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  } else 
+}
 
 
 
