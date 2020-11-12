@@ -37,6 +37,7 @@ height: 300px;
 line-height: 100px;
 text-align: center;
 margin: 2px;
+display: none;
 }
 
 
@@ -75,8 +76,8 @@ overflow: hidden;
     }
     
     .btn.active {
-      background-color: #666;      
-      color: white;
+      background-color: silver;      
+      color: teal;
     }
     
     .btnContainer {
