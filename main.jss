@@ -70,6 +70,7 @@ document.getElementById("myPic").style.width = "0%";
     element.className = arr1.join(" ");
   }
   
+  
   // Add active class to the current button (highlight it)
   let btnContainer = document.getElementById("myBtnContainer");
   let btns = btnContainer.getElementsByClassName("btn");
