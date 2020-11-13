@@ -72,7 +72,7 @@ document.getElementById("myPic").style.width = "0%";
   
   // Add active class to the current button (highlight it)
   let btnContainer = document.getElementById("myBtnContainer");
-  //let btns = btnContainer.getElementsByClassName("btn");
+  let btns = btnContainer.getElementsByClassName("btn");
   for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
       let current = document.getElementsByClassName("active");

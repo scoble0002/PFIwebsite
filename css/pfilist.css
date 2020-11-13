@@ -29,14 +29,14 @@ p2 {
     
 
 .filterDiv {
-float: left;
+float: right;
 background-color: teal;
 color: #ffffff;
 width: 300px;
 height: 300px;  
 line-height: 100px;
 text-align: center;
-margin: 2px;
+margin: 25px;
 display: none;
 }
 
@@ -88,4 +88,7 @@ overflow: hidden;
       margin: 2px;
       text-align: center;
     }
+    
+
+
     

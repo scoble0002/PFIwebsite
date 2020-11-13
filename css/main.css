@@ -4,13 +4,14 @@
     box-sizing: border-box;
   }
   
-    /*Change the link color black on hover*/
+  /*-----------------------------------movie list--------------------------------------*/
+  
+    /*-----------------------------------Change the link color black on hover*/
     ol li a:hover {
       background-color: #111;
     }
     
-    /*movie list*/
-  
+
     ol {
       list-style-type: none;
       margin: 0;
@@ -37,7 +38,7 @@
       
   
   
-  
+  /*---------------------------------------footer--------------------------*/
   .footer {
     position: fixed;
     left: 0;
@@ -48,6 +49,7 @@
     text-align: right;
   }
   
+
   .platypusHeader {
     margin: 0;
   }
@@ -56,13 +58,13 @@
     font-family: 'Nunito', sans-serif;
     color: black;
     display: flex;
-    flex-direction: column; /* creates rows out of the elements main and footer */
+    flex-direction: column; 
     height: 100vh; 
     margin:0;
   }
   
   main {
-    flex: 1 0 auto; /* allows the content to grow but not shrink */
+    flex: 1 0 auto; 
   }
   
   
@@ -75,11 +77,12 @@
   h1 {
     margin: 0 0 30px 0;
     text-align: center;
-    max-width: 300px;
+    max-width: 100%;
     margin: 10px auto;
     padding: 10px 20px;
     background: white;
     border-radius: 8px;
+    color: black;
   }
   
   p {
@@ -89,12 +92,23 @@
     padding: 10px 20px;
     background: black;
     border-radius: 8px;
+    text-align: center;
   }
   
   h2 {
     margin: 0 0 30px 0;
     text-align: center;
-    max-width: 300px;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 8px;
+  }
+
+  h6{
+    margin: 0 0 30px 0;
+    text-align: center;
+    max-width: 100%;
     margin: 10px auto;
     padding: 10px 20px;
     background: white;
@@ -108,6 +122,7 @@
     padding: 10px 20px;
     background: black;
     border-radius: 8px;
+    text-align: center;
   }
   
   form {
@@ -166,7 +181,7 @@
   }
 
   
-  /*congratulation Screen*/
+  /*-----------------------------------congratulation Screen*/
   body {
     font-family: 'Lato', sans-serif;
   }
@@ -230,20 +245,21 @@
     font-size: 300%;
     color: limegreen;
   }
-  
+
 
   
-  /* Media Queries  */
+  
+  /*----------------------------------- Media Queries ----------------------------------- */
   
   
-  /* small devices  */
+  /*----------------------------------- small devices ----------------------------------- */
   @media only screen and (max-width: 600px) {
     h3 {
       background-color: red;
     }
   }
   
-  /* medium devices  */
+  /*----------------------------------- medium devices ----------------------------------- */
   @media only screen and (min-width: 600px) {
     h3 {
       background-color: blue;
@@ -251,9 +267,8 @@
   }
   
   
-  /* large devices  */
+  /*----------------------------------- large devices ----------------------------------- */
   @media only screen and (min-width: 1200px) {
-    @media only screen and (min-width: 1200px) {
       h1 {
           margin: 0 0 30px 0;
           text-align: center;
@@ -268,7 +283,7 @@
       }
     
       
-  /* Congratulation scree */
+  /*----------------------------------- Congratulation scree----------------------------------- */
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -291,6 +306,4 @@
   }
   
   }
-  
-  
   
