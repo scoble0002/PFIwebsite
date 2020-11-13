@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
   
+  
   /*-----------------------------------movie list--------------------------------------*/
   
     /*-----------------------------------Change the link color black on hover*/
@@ -37,7 +38,6 @@
     }
       
   
-  
   /*---------------------------------------footer--------------------------*/
   .footer {
     position: fixed;
@@ -49,10 +49,11 @@
     text-align: right;
   }
   
-
+/*--------------------------------------got rid of white space above navbar--------------*/
   .platypusHeader {
     margin: 0;
   }
+  
   
   body {
     font-family: 'Nunito', sans-serif;
@@ -69,7 +70,6 @@
   
   
   div {
-    margin: 0 0 30px 0;
     text-align: center;
   }
   
