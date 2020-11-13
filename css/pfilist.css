@@ -96,7 +96,7 @@ overflow: hidden;
       width: 100%;
       line-height: 100px;
       margin: 2px;
-      text-align: center;0
+      text-align: center;
     }
     
 
@@ -107,7 +107,7 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-  color: back;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -121,8 +121,4 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 
-    
-  /*----------------------------------- Media Queries ----------------------------------- */
-  
-  
-  
+}
