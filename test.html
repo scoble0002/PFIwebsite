@@ -1,26 +1,22 @@
+
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html>
-<html>
-  <!DOCTYPE html>
-  <html>
+  
       <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="css/pfilist.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">     
           <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="css/main.css">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">           
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             <script src="main.jss"></script>
           </head>
-          <body>
-    
-        </head>
   
-      
       <header>
         <div class="platypusHeader";> 
             <a href="default.asp">
@@ -53,85 +49,44 @@
             </ul>
           </div>  
         </nav>
-        <br>
+        
         
   
-     </header>   
+     </header>
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
-</head>
+     
+     
 <body>
 
-<h2>Responsive Two Column Layout</h2>
-<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+  <h1>Sort the PFI 100 by Genre</h1>
+<div class="allBtn"><button class="btn active" onclick="filterSelection('all')"> Show all Genres</button></div>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-        
-    <body>
- 
-      <div class="container">
-        
-    <h1> Get a Recommendation from the PFI 100 </h1>
 
-    
-      <form id="myForm">
-        
-        <label for="Recommendation"> Platypus Approved </label>
-     
-        <input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation">
-      
-             </form>
-        
-             <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
-        
-      
-         </div>
-
+  <div class="btnContainer" id="mybtnContainer">
+   <div> <button class="btn" onclick="filterSelection('action')">Action</button>
+    <button class="btn" onclick="filterSelection('drama')">Drama</button>
+    <button class="btn" onclick="filterSelection('horror')"> Horror</button>
+    <button class="btn" onclick="filterSelection('comedy')"> Comedy</button>
+    <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
   </div>
-
-
-  <div class="column" style="background-color:#bbb;">
-  
-
-    
-
-<h2>Are you a Platypus?</h2>
-
-<div>
-<button id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <div>
+    <button class="btn" onclick="filterSelection('scifi')"> Sci Fi</button>
+    <button class="btn" onclick="filterSelection('crime')">Crime</button>
+    <button class="btn" onclick="filterSelection('musical')"> Musical</button>
+    <button class="btn" onclick="filterSelection('western')"> Western</button>
+    <button class="btn" onclick="filterSelection('war')"> War</button>
+  </div>  
 </div>
 
-<h6><a href="signup.html">I'm not a Platypus</a></h6>
+<div class="container">
+  <div class="filterDiv drama passed orsonwelles">
+    <h2>Citizen Kane</h2>  
+    <p1>About the director:<a href="https://en.wikipedia.org/wiki/Orson_Welles"><img border="0" alt="Youtubelink" src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="75" height="75"></a></p1>
+  <p2> the Trailer: <a href="https://youtu.be/8dxh3lwdOFw"><img border="0" alt="Youtubelink" src="https://cdn.pixabay.com/photo/2015/01/05/17/19/film-589490_960_720.jpg" width="75" height="75"></a></p2> 
 
+<h3>
+
+  
 <div id="id01" class="modal">
   
 
@@ -142,7 +97,7 @@
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
+      <label for="uname"><b>Platypus Name</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
@@ -150,7 +105,7 @@
         
       <button type="submit">Login</button>
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <input type="checkbox" checked="checked" name="remember"> Remember this Platypus
       </label>
     </div>
 
@@ -161,4 +116,32 @@
 
 </body>
   </div>
-</html>
+
+</h3>        
+
+
+
+</h3>
+</div>
+
+<style>
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    color: limegreen;
+  }
+
+</style>
+
+
+<footer class="footer">
+  &#169 2020 PFI Media &nbsp;
+ </footer>
+
+</html> 

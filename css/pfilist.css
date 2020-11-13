@@ -29,11 +29,11 @@ p2 {
     
 
 .filterDiv {
-float: right;
+float: left;
 background-color: teal;
 color: #ffffff;
 width: 300px;
-height: 300px;  
+height: 400px;  
 line-height: 100px;
 text-align: center;
 margin: 25px;
@@ -62,7 +62,16 @@ overflow: hidden;
   
 }
 
-    /* Style the buttons */
+
+
+/*---------------------------------------------------------------------position the buttons----------------------------*/
+.allBtn{
+  text-align: center;
+}
+
+
+
+    /*----------------------------------- Style the buttons -----------------------------------*/
     .btn {
       border: none;
       outline: none;
@@ -86,9 +95,33 @@ overflow: hidden;
       width: 100%;
       line-height: 100px;
       margin: 2px;
-      text-align: center;
+      text-align: center;0
     }
     
 
+/*------------------------link colors-------------------------*/
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: back;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 
     
+  /*----------------------------------- Media Queries ----------------------------------- */
+  
+  
+  
