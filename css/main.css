@@ -8,10 +8,6 @@
   
   /*-----------------------------------movie list--------------------------------------*/
   
-    /*-----------------------------------Change the link color black on hover*/
-    ol li a:hover {
-      background-color: #111;
-    }
     
 
     ol {
@@ -20,21 +16,15 @@
       overflow: hidden;
       max-width: 300px;
       margin: 10px auto;
-      padding: 10px 20px;
-    
+      padding: 10px 20px;    
       border-radius: 8px;
     }
     
-    ol li {
-      float: center;
-    }
     
-    ol li a {
-      display: block;
+    ol li {
       color: black;
-      text-align: center;
+      text-align: left;
       padding: 14px 16px;
-      text-decoration: none;
     }
       
   
