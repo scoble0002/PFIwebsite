@@ -1,35 +1,65 @@
 
-
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: black;
-
-  }
   
 h1 {
   margin: 0 0 30px 0;
   text-align: center;
 }
 
-p1 {
-text-align: center;
-float: left;
-max-width: 50%;
-max-height: 80%;
-margin-bottom: 10px;
+p {
+  text-align: center;
+  margin-bottom: 10px;
+  }
+ 
+
+  /*----------------------------------- 2 column layout index.html----------------------------------- */
+ 
+  * {
+    box-sizing: border-box;
+  }
+  
+  /*----------------------------------- Create two equal columns that floats next to each other----------------------------------- */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /*----------------------------------- Clear floats after the columns----------------------------------- */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+/*---------------------------------------------------------------------position the buttons----------------------------*/
+.allBtn{
+  text-align: center;
 }
 
-p2 {
+
+ 
+
+  /*-------------------styles the sort tiles---------------*/
+  p1 {
     text-align: center;
-    float: right;
+    float: left;
     max-width: 50%;
     max-height: 80%;
     margin-bottom: 10px;
     }
     
+    p2 {
+        text-align: center;
+        float: right;
+        max-width: 50%;
+        max-height: 80%;
+        margin-bottom: 10px;
+        }
+        
 
 .filterDiv {
-float: left;
+float: right;
 background-color: teal;
 color: #ffffff;
 width: 300px;
@@ -37,6 +67,7 @@ height: 400px;
 line-height: 100px;
 text-align: center;
 margin: 25px;
+margin-right: 100px;
 display: none;
 }
 
@@ -51,6 +82,8 @@ margin-top: 20px;
 overflow: hidden;
 }
 
+
+/*-------------------footer------------------*/
 .footer {
   position: fixed;
   left: 0;
@@ -60,13 +93,6 @@ overflow: hidden;
   color: white;
   text-align: right;
   
-}
-
-
-
-/*---------------------------------------------------------------------position the buttons----------------------------*/
-.allBtn{
-  text-align: center;
 }
 
 
@@ -123,3 +149,37 @@ a:active {
   text-decoration: underline;
 
 }
+
+        /*----------------------------------- Responsive layout  stacks the columns----------------------------------- */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+
+
+
+        @media screen and (max-width: 1000px) {        
+.filterDiv {
+  margin-right: 50px;
+  }
+}  
+
+  @media screen and (max-width: 800px) {        
+    .filterDiv {
+      margin-right: 25px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {        
+      .filterDiv {
+        margin-right: 5px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .filterDiv {
+          margin-right: 20%;
+          }
+        }
+  
