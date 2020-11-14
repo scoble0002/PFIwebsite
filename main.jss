@@ -81,3 +81,4 @@ document.getElementById("myPic").style.width = "0%";
       this.className += " active";
     });
   }
+

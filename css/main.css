@@ -14,14 +14,13 @@
     
 
     ol {
-      list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       max-width: 300px;
       margin: 10px auto;
       padding: 10px 20px;
-      background: purple;
+    
       border-radius: 8px;
     }
     
@@ -86,11 +85,10 @@
   }
   
   p {
-    color: pink;
-    max-width: 300px;
+    color: black;
+    max-width: 1000px;
     margin: 10px auto;
-    padding: 10px 20px;
-    background: black;
+    padding: 10px 50px;
     border-radius: 8px;
     text-align: center;
   }
