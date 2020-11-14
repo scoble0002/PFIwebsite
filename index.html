@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html>
-<html>
-  <!DOCTYPE html>
-  <html>
       <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +16,12 @@
           <body>
     
         </head>
-  
-      
       <header>
         <div class="platypusHeader";> 
             <a href="default.asp">
               <img src="images\platypus-swimming.webp" alt="platypusImage" style="width:100%;height:100%;">
            </a>
          </div>
-        
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
           <a class="navbar-brand" href="#">Platypus Film Institute</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -54,81 +47,86 @@
             </ul>
           </div>  
         </nav>
-        <br>
-        
-  
      </header>   
+
 <body>
 
-
+<h1>Welcome to the Platypus Film Institute</h1>
 
 <div class="row">
   <div class="column">
-        
-    <body>
- 
-      <div class="container">
-        
-    <h1> Get a Recommendation from the PFI 100 </h1>
-
-    
-      <form id="myForm">
-        
-        <label for="Recommendation"> Platypus Approved </label>
-     
-        <input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation">
-      
-             </form>
-        
-             <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
-        
-      
-         </div>
-
+    <div class="card">
+      <h2>Platypus News</h2>
+      <p>Guys, the humans have found another of our secret powers, I don't know who talked this time but we all need to keep our bills shut.</p>
+      <p><a href="https://news.sky.com/story/platypus-fur-glows-green-under-uv-light-scientists-discover-12122448">read story</a></p>
+    </div>
   </div>
-
 
   <div class="column">
-    
-<h2>Are you a Platypus?</h2>
+    <div class="card">
+      <div class="container">
+        <h2> Get a Recommendation from the PFI 100 </h2>
+          <form id="myForm">
+            <label for="Recommendation"> Platypus Approved </label>
+            <input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation">
+                 </form>
+                 <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
+             </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h2>Are you a Platypus?</h2>
 
-<div>
-<button id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yes!</button>
+      <div>
+      <button id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yes!</button>
+      </div>
+      
+      <h6><a href="signup.html">I'm not a Platypus</a></h6>
+      
+      <div id="id01" class="modal">
+        
+      
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images\face.jpeg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Platypus Name</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember this Platypus
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+      
+      
+        </div>
+          </div>
+        </div>
+      
+  <div class="column">
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
 </div>
 
-<h6><a href="signup.html">I'm not a Platypus</a></h6>
-
-<div id="id01" class="modal">
-  
-
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="images\face.jpeg" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Platypus Name</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember this Platypus
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-
 </body>
-  </div>
-
-
   <footer class="footer">
     &#169 2020 PFI Media &nbsp;
    </footer>
