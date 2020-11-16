@@ -1,55 +1,34 @@
 <!DOCTYPE html>
 <html>
-      <head>
+<head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="css/normalize.css">
-
           <link rel="stylesheet" href="css/main.css">
           <link rel="stylesheet" href="css/index.css">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">       
             <script src="main.jss"></script>
-          </head>
-          <body>
-    
-        </head>
-      <header>
+</head>
+<header>
         <div class="platypusHeader";> 
-            <a href="default.asp">
-              <img src="images\platypus-swimming.webp" alt="platypusImage" style="width:100%;height:100%;">
-           </a>
+            <a href="default.asp"><img src="images\platypus-swimming.webp" alt="platypusImage" style="width:100%;height:100%;"></a>
          </div>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
           <a class="navbar-brand" href="#">Platypus Film Institute</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pfilist.html">PFI 100</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About The PFI</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="signup.html">Become a Platypus</a>
-              </li>    
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="pfilist.html">PFI 100</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About The PFI</a></li>
+              <li class="nav-item"><a class="nav-link" href="signup.html">Become a Platypus</a></li>    
             </ul>
           </div>  
         </nav>
-     </header>   
-
+</header>   
 <body>
-
 <h1>Welcome to the Platypus Film Institute</h1>
-
 <div class="row">
   <div class="column">
     <div class="card">
@@ -58,62 +37,40 @@
       <p><a href="https://news.sky.com/story/platypus-fur-glows-green-under-uv-light-scientists-discover-12122448">read story</a></p>
     </div>
   </div>
-
   <div class="column">
     <div class="card">
       <div class="container">
         <h2> Get a Recommendation from the PFI 100 </h2>
-          <form id="myForm">
-            <label for="Recommendation"> Platypus Approved </label>
-            <input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation">
-                 </form>
+          <form id="myForm"><label for="Recommendation"> Platypus Approved </label><input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation"></form>
                  <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
-             </div>
+      </div>
     </div>
   </div>
-  
   <div class="column">
     <div class="card">
       <h2>Are you a Platypus?</h2>
-
       <div>
       <button id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yes!</button>
       </div>
-      
-      <h6><a href="signup.html">I'm not a Platypus</a></h6>
-      
+        <h6><a href="signup.html">I'm not a Platypus</a></h6>
       <div id="id01" class="modal">
-        
-      
         <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="images\face.jpeg" alt="Avatar" class="avatar">
-          </div>
-      
-          <div class="container">
-            <label for="uname"><b>Platypus Name</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><img src="images\face.jpeg" alt="Avatar" class="avatar">
+        </div>
+          <div class="container"><label for="uname"><b>Platypus Name</b></label><input type="text" placeholder="Enter Username" name="uname" required>
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
-              
             <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember this Platypus
-            </label>
+            <label><input type="checkbox" checked="checked" name="remember"> Remember this Platypus</label>
           </div>
-      
           <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
-      
-      
         </div>
-          </div>
-        </div>
-      
+    </div>
+  </div>
   <div class="column">
     <div class="card">
       <h3>PFI Top 10 Thanksgiving Movies</h3>
@@ -130,12 +87,10 @@
           <li>Pieces of April</li>
         </ol>
     </div>
-  </div>
+  
 </div>
-
 </body>
   <footer class="footer">
     &#169 2020 PFI Media &nbsp;
-   </footer>
-
+  </footer>
   </html>
