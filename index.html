@@ -1,211 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-
-
-    <header>
-       <div> 
-           <a href="default.asp">
-             <img src="https://i.pinimg.com/originals/10/8f/7a/108f7aa6aa59c941a79ba804aa171b51.jpg" alt="platypusImage" style="width:25%;height:25%;">
-          </a>
-        </div>
-
-        <div id="navbar">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pfilist.html">See PFI 100</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="about.html">About The PFI</a></li>
+<head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="css/main.css">
+          <link rel="stylesheet" href="css/index.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">       
+            <script src="main.jss"></script>
+</head>
+<header>
+        <div class="platypusHeader";> 
+            <a href="default.asp"><img src="images\platypus-swimming.webp" alt="platypusImage" style="width:100%;height:100%;"></a>
+         </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <a class="navbar-brand" href="#">Platypus Film Institute</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="pfilist.html">PFI 100</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About The PFI</a></li>
+              <li class="nav-item"><a class="nav-link" href="signup.html">Become a Platypus</a></li>    
             </ul>
-           </div>
-  
-           <script src="main.jss"></script>
-
-    </header>
-      
-
-    <body>
-
-      <form action="index.html" method="post">
-
-        <h1> PFI Randomized Movie Recommendations</h1>
-            
-        <fieldset>
-
-            <legend><span class="number"></span> Filters </legend>
-
-            <input type="checkbox" id="genre" value="interest_genre" name="user_genre"><label class="light" for="genre">Genre</label>
-
-            <select id="choice" name="user_choice">
-
-                <optgroup label="Genre">   
-
-                    <option value="horror_genre">Horror</option>
-                    <option value="comedy_genre">Comedy</option>
-                    <option value="scifi_genre">Sci Fi</option>
-                    <option value="drama_genre">Drama</option>
-                    <option value="crime_genre">Crime</option>
-                    <option value="western_genre">Western</option>
-                    <option value="thiller_genre">Thiller</option>
-
-                </optgroup>
-
-            </select>
-
-            <br>
-
-            <input type="checkbox" id="mpaa" value="interest_mpaa" name="user_mpaa"><label class="light" for="mpaa">MPAA Rating</label>
-
-            <select id="choice" name="user_choice">
-
-                <optgroup label="Rating">  
-
-                    <option value="g_rating"> G </option>
-                    <option value="pg_rating"> PG </option>
-                    <option value="pg_13_rating"> PG-13 </option>
-                    <option value="r_rating"> R </option>
-                    <option value="unrated_rating"> Unrated </option>
-                    <option value="passed_rating"> Passed </option>
-    
-
-                </optgroup>
-
-            </select>
-
-                <br>
-            
-                <input type="checkbox" id="director" value="interest_director" name="user_director"><label class="light" for="director">Director</label>
-
-            <select id="choice" name="user_choice">
-
-                <optgroup label="Directed by ">  
-                
-
-
-                    <option value="orsonwelles-director"> Orson Welles </option>
-                    <option value="joelethancoen_director"> Joel and Ethan Coen </option>
-                    <option value="josephmankeiwicz_director"> Joseph Mankeiwicz </option>
-                    <option value="michaelcurtiz_director"> Michael Curtiz </option>
-                    <option value="billywilder_director"> Billy Wilder </option>
-                    <option value="eliakazan_director"> Elia Kazan </option>
-                    <option value="spikelee_director"> Spike Lee </option>
-                    <option value="johnhuston_director"> John Huston </option>
-                    <option value="paulthomasanderson_director"> Paul Thomas Anderson </option>
-                    <option value="alfredhitchcock_director"> Alfred Hitchcock </option>
-                    <option value="quentintarentino_director"> Quentin Tarentino </option>
-                    <option value="amyheckerling_director"> Amy Heckerling </option>
-                    <option value="johnsingleton_director"> John Singleton </option>
-                    <option value="johnschlesinger_director"> John Schlesinger </option>
-                    <option value="stuartrosenberg_director"> Stuart Rosenberg </option>
-                    <option value="robertmulligen_director"> Robert Mulligen </option>
-                    <option value="robertzemekis_director"> Robert Zemekis </option>
-                    <option value="leomcarey_director"> Leo McCarey </option>
-                    <option value="haroldramis_director"> Harold Ramis </option>
-                    <option value="victorfleming_director"> Victor Fleming </option>
-                    <option value="carlreiner_director"> Carl Reiner </option>
-                    <option value="johnford_director"> John Ford </option>
-                    <option value="samwood_director"> Sam Wood </option>
-                    <option value="mikenichols_director"> Mike Nichols </option>
-                    <option value="stanleykubrick_director"> Stanley Kubrick </option>
-                    <option value="melbrooks_director"> Mel Brooks </option>
-                    <option value="charledlaughton_director"> Charles Laughton </option>
-                    <option value="johncarpenter_director"> John Carpenter </option>
-                    <option value="clinteastwood_director"> Clint Eastwood </option>
-                    <option value="stevenspielberg_director"> Steven Spielberg </option>
-                    <option value="ridleyscott_director"> Ridley Scott </option>
-                    <option value="williamwyler_director"> William Wyler </option>
-                    <option value="idalupino_director"> Ida Lupino </option>
-                    <option value="frankcapra_director"> Frank Capra </option>
-                    <option value="prestonsturgis_director"> Preston Sturgis </option>
-                    <option value="genekelly_director"> Gene Kelly </option>
-                    <option value="johnavildson_director"> John Avildson </option>
-                    <option value="fredzimmerman_director"> Fred Zimmerman </option>
-                    <option value="georgelucas_director"> George Lucas </option>
-                    <option value="pennymarshal_director"> Penny Marshal </option>
-                    <option value="arthurpenn_director"> Arthur Penn </option>
-                    <option value="sampeckinpaw_director"> Sam Peckinpaw </option>
-                    <option value="sidneylumet_director"> Sidney Lumet </option>
-                    <option value="johnlandis_director"> John Landis </option>
-                    <option value="melstuart_director"> Mel Stuart </option>
-                    <option value="johnmctieran_director"> John McTieran </option>
-                    <option value="richardlinkletter_director"> Richard Linkletter </option>
-                    <option value="johnhughes_director"> John Hughes </option>
-                    <option value="curtishanson_director"> Curtis Hanson </option>
-                    <option value="howardhawks_director"> Howard Hawks </option>
-                    <option value="wescraven_director"> Wes Craven </option>
-                    <option value="bobclark_director"> Bob Clark </option>
-                    <option value="timburton_director"> Tim Burton </option>
-                    <option value="tedkotcheff_director"> Ted Kotcheff </option>
-                    <option value="jamescameron_director"> James Cameron </option>
-                    <option value="edgarwright_director"> Edgar Wright </option>
-                    <option value="franciusfordcoppola_director"> Francis Ford Coppola </option>
-                    <option value="martinscorsese_director"> Martin Scorsese </option>
-                    <option value="oliverstone_director"> Oliver Stone </option>
-                    <option value="robertaldrich_director"> Robert Aldrich </option>
-                    <option value="jordanpeele_director"> Jordan Peele </option>
-                    <option value="davidfincher_director"> David Fincher </option>
-                    <option value="randalkleiser_director"> Randal Kleiser </option>
-    
-    
-                </optgroup>
-
-                <br>
-
-            </select>
-
-
-         </fieldset>
-
-
-
-            <button type="submit">Get Recommendation</button>
-
-        </form>
-
-
-        <form action="index.html" method="post">
-
-
-            <h2> Sign-up for free account </h2>
-
-            <fieldset>
-
-                <legend><span class="number"></span> Sign In or Create Account </legend>
-            
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-
-                <br>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="user_email">
-    
-                <br>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="user_password">
-            
-                <br>
-
-            </fieldset>
-
-            <button type="submit"> Submit Information </button>    
-    
-      </form>
-
-    </body>
-
-    <footer>
-        <div class="footer">
-          <p>Footer</p>
+          </div>  
+        </nav>
+</header>   
+<body>
+<h1>Welcome to the Platypus Film Institute</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h2>Platypus News</h2>
+      <p>Guys, the humans have found another of our secret powers, I don't know who talked this time but we all need to keep our bills shut.</p>
+      <p><a href="https://news.sky.com/story/platypus-fur-glows-green-under-uv-light-scientists-discover-12122448">read story</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2> Get a Recommendation from the PFI 100 </h2>
+          <form id="myForm"><label for="Recommendation"> Platypus Approved </label><input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation"></form>
+                 <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2>Are you a Platypus?</h2>
+      <div>
+      <button id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yes!</button>
+      </div>
+        <h6><a href="signup.html">I'm not a Platypus</a></h6>
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><img src="images\face.jpeg" alt="Avatar" class="avatar">
         </div>
-      </footer>
-
-      
-</html>
+          <div class="container"><label for="uname"><b>Platypus Name</b></label><input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label><input type="checkbox" checked="checked" name="remember"> Remember this Platypus</label>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>PFI Top 10 Thanksgiving Movies</h3>
+        <ol>
+          <li>Planes, Trains, and Automobiles</li>
+          <li>Addam's Family Values</li>
+          <li>A Charlie Brown Thanksgiving</li>
+          <li>Rocky</li>
+          <li>Home for the Holidays</li>
+          <li>The War at Home</li>
+          <li>Thankskilling</li>
+          <li>The Ice Storm</li>
+          <li>The Ref</li>
+          <li>Pieces of April</li>
+        </ol>
+    </div>
+  
+</div>
+</body>
+  <footer class="footer">
+    &#169 2020 PFI Media &nbsp;
+  </footer>
+  </html>
