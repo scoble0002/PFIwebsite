@@ -173,7 +173,7 @@ a:active {
         }
 
 
-
+/*----------------------------------------attempts to keep tiles centered=---------------------------*/ 
         @media screen and (max-width: 1000px) {        
 .filterDiv {
   margin-right: 50px;
