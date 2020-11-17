@@ -7,7 +7,12 @@
           <link rel="stylesheet" href="css/main.css">
           <link rel="stylesheet" href="css/index.css">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">       
-            <script src="main.jss"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              <script src="main.jss"></script>
+    </head>
 </head>
 <header>
         <div class="platypusHeader";> 
@@ -41,8 +46,8 @@
     <div class="card">
       <div class="container">
         <h2> Get a Recommendation from the PFI 100 </h2>
-          <form id="myForm"><label for="Recommendation"> Platypus Approved </label><input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation"></form>
-                 <button onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
+          <form id="myForm"><label for="Recommendation"> Platypus Approved </label><input "randomMovie" type="text" id="randomMovie" placeholder="Recommendation" disabled></form>
+                 <button class="otherButtons" onclick="findMovie();" type="randomMovie" id="randomButton" >Random Movie</button>
       </div>
     </div>
   </div>
@@ -50,7 +55,7 @@
     <div class="card">
       <h2>Are you a Platypus?</h2>
       <div>
-      <button id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yes!</button>
+      <button class="otherButtons" id="signInbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yes!</button>
       </div>
         <h6><a href="signup.html">I'm not a Platypus</a></h6>
       <div id="id01" class="modal">

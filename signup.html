@@ -6,7 +6,7 @@
           <link rel="stylesheet" href="css/normalize.css">
           <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
           <link rel="stylesheet" href="css/main.css">
-          <link rel="stylesheet" href="css/signup.css">
+
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -28,27 +28,34 @@
             </div>  
           </nav>
   </header>   
-  <body>
-    <h1> Become a Platypus It's Free! </h1>
-    <div class="container">
-      <form id="myForm">
-            <label for="pname">Platypus Name</label><input type="text" id="pname" value="" required>
-            <label for="password">Password</label><input type="text" id="password" name="userpassword" required>
-            <label for="password">Confirm Password</label><input type="text" id="password" name="userpassword" required>
-            <label for="email">Your Email</label><input type="email" id="email" name="useremail" required>   
-            <label for="favorite">Favorite Movie</label><input type="text" id="favorite" name="favoriteMovie" required>
-            <label><input type="checkbox" checked="checked" name="subscribe"> Recieve PFI Newsletter</label>
-            <button type="button"  onclick="openPic()">Become a Platypus! </button>
-      </form>
-    </div>
-    <div id="myPic" class="overlay"><a href="javascript:void(0)" class="closebtn" onclick="closePic()">&times;</a>
-      <div class="overlay-content">
-        <div class="container"><img src="images\congratePlatypus.jpg" alt="platypusImage" style="width:80%;height:80%;">
-          <div class="centered">Congratulations<br><p5 id="demo"></p5><br> You're a<br> Platypus!
-          </div>
-        </div>
-      </div>
-    </div>
+   <h1> Become a Platypus It's Free! </h1>
+
+  <form class="signup" name="RegForm"  
+        onsubmit="return formValidation()" method="post"> 
+      <p>Name: <input id="platypusName" type="text" 
+                      size="65" name="Name" value=""/></p> 
+    
+      <p>Favorite Movie: <input type="text" 
+                         size="65" name="Favorite" /></p> 
+    
+      <p>E-mail Address: <input type="text" 
+                             size="65" name="EMail" /></p> 
+    
+      <p>Password: <input type="text" 
+                          size="65" name="Password" /></p> 
+    
+      <p>Confirm Password: <input type="text" 
+                           size="65" name="ConfirmPassword" /></p> 
+
+         <p> <input class="otherButtons" type="submit" 
+                 value="send" name="Submit" /> 
+      </p> 
+
+      <style>
+
+
+      </style>
+  </form> 
   </body>
   <footer class="footer">
     &#169 2020 PFI Media &nbsp;

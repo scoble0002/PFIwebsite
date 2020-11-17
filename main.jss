@@ -22,21 +22,63 @@ function findMovie() {
 }
 
 
-//----------------------congratulation screen-------------//
 
-function openPic() {
-document.getElementById("myPic").style.width = "100%";
-let x = 
-document.getElementById("pname").value;
-document.getElementById("demo").innerHTML = x;
-document.getElementById("myForm").reset();
-}
 
-function closePic() {
-document.getElementById("myPic").style.width = "0%";
-}
+function formValidation() { 
+        let name = document.forms["RegForm"]["Name"]; 
+        let email = document.forms["RegForm"]["EMail"]; 
+        let password = document.forms["RegForm"]["Password"]; 
+        let confirmpassword = document.forms["RegForm"]["ConfirmPassword"]; 
+        let address = document.forms["RegForm"]["Favorite"]; 
+  
+        if (name.value == "") { 
+            window.alert("Please enter your new Platypus name."); 
+            name.focus(); 
+            return false; 
+        } 
+  
+        if (address.value == "") { 
+            window.alert("Please enter your favorite movie."); 
+            address.focus(); 
+            return false; 
+        } 
+  
+        if (email.value == "") { 
+            window.alert( 
+              "Please enter a valid e-mail address."); 
+            email.focus(); 
+            return false; 
+        } 
+  
+        if (password.value == "") { 
+            window.alert( 
+              "Please enter your password."); 
+            password.focus(); 
+            return false; 
+        } 
+  
+        if (confirmpassword.value == "") { 
+            window.alert("Please confirm your password"); 
+            confirmpassword.focus(); 
+            return false; 
+        }
+         if (confirmpassword.value != password.value) { 
+            window.alert("Your passwords don't match"); 
+            confirmpassword.focus(); 
+            return false; 
+            
+            
+        } 
+  
+        let x = 
+           document.getElementById("platypusName").value
+        window.alert("Congratulations " + x + " you are now a Platypus!")
+        return true; 
+    } 
 
-  //---------------------pfi list btner-------------------//
+
+
+  //---------------------pfi list sorter-------------------//
 
   filterSelection("all")
   function filterSelection(c) {
